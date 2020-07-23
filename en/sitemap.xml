@@ -18,6 +18,16 @@
   </url>
   
   <url>
+    <loc>https://natty-warhol.github.io/tags/contact/</loc>
+    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/tags/introduction/</loc>
+    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://natty-warhol.github.io/posts/</loc>
     <lastmod>2020-07-23T04:10:45-07:00</lastmod>
   </url>
@@ -38,12 +48,17 @@
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/tags/untagged/</loc>
+    <loc>https://natty-warhol.github.io/posts/2020/07/welcome/</loc>
     <lastmod>2020-07-23T04:10:45-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/posts/2020/07/welcome/</loc>
+    <loc>https://natty-warhol.github.io/tags/welcome/</loc>
+    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/tags/what-to-expect/</loc>
     <lastmod>2020-07-23T04:10:45-07:00</lastmod>
   </url>
   
