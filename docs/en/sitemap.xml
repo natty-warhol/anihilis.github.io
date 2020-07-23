@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://anihilis.ddns.me/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://anihilis.ddns.me/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anihilis.ddns.me/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anihilis.ddns.me/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://anihilis.ddns.me/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anihilis.ddns.me/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anihilis.ddns.me/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://anihilis.ddns.me/fr/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anihilis.ddns.me/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anihilis.ddns.me/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://anihilis.ddns.me/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anihilis.ddns.me/tags/"
+                />
+  </url>
+  
+</urlset>
