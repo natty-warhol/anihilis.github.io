@@ -4,6 +4,7 @@
   
   <url>
     <loc>https://https://natty-warhol.github.io/anihilis.github.io/</loc>
+    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -14,6 +15,36 @@
                 hreflang="en"
                 href="https://https://natty-warhol.github.io/anihilis.github.io/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://https://natty-warhol.github.io/anihilis.github.io/posts/</loc>
+    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://https://natty-warhol.github.io/anihilis.github.io/tags/</loc>
+    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://https://natty-warhol.github.io/anihilis.github.io/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://https://natty-warhol.github.io/anihilis.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://https://natty-warhol.github.io/anihilis.github.io/tags/untagged/</loc>
+    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://https://natty-warhol.github.io/anihilis.github.io/posts/2020/07/welcome/</loc>
+    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
   </url>
   
   <url>
@@ -41,20 +72,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://https://natty-warhol.github.io/anihilis.github.io/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://https://natty-warhol.github.io/anihilis.github.io/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://https://natty-warhol.github.io/anihilis.github.io/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://https://natty-warhol.github.io/anihilis.github.io/tags/"
                 />
   </url>
   
