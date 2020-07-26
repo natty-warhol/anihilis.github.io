@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 25 Jul 2020 08:03:02 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 04:17:05 -0700</lastBuildDate>
     
 	<atom:link href="https://natty-warhol.github.io/personal_logs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Day_05</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_05/</link>
+      <pubDate>Sun, 26 Jul 2020 04:17:05 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_05/</guid>
+      <description>Using Solus I&amp;rsquo;ve been working on the Solus operating system (base kernel of Linux) for several months now (recently returned to Linux and all relevant things along from using a Macbook for a minute), as a laptop system, as well as for my server (boy was that a mistake).
+I&amp;rsquo;ve reached that point however, where everything is superbly streamlined, and everything works without error, ever. AND IT&amp;rsquo;S SO BORING. I&amp;rsquo;ve always had the issue of being bored of my tech when I&amp;rsquo;m not messing with it from the most basic levels.</description>
+    </item>
     
     <item>
       <title>Day_04</title>
