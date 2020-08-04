@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 28 Jul 2020 08:38:19 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2020 13:24:15 -0700</lastBuildDate>
     
 	<atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Day_09</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_09/</link>
+      <pubDate>Tue, 04 Aug 2020 13:24:15 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_09/</guid>
+      <description>Switched My OS!! Huzzah! I have done it! I am free from Solus Linux!
+Don&amp;rsquo;t get me wrong, I love the damned Operating System, I just started feeling claustrophobic with the systemd and the perfect UX and clean UI&amp;hellip; it was just&amp;hellip;. too perfect&amp;hellip;
+So what did I switch to? I did a base install of Artix Linux! I love it so far! I went with the runit instance, because it seemed to have the best server/desktop useability.</description>
+    </item>
     
     <item>
       <title>Day_07</title>
@@ -96,16 +107,6 @@ So now what? It&amp;rsquo;s almost the end of July, I have friends and family me
       <guid>https://natty-warhol.github.io/posts/2020/07/internet-security-a-work-in-progress/</guid>
       <description>Hiding From the Internet &amp;ndash; Making a Plan * Information largely *taken* from the EFF1
  What do you want to hide? Who do I want to protect it from? How bad are the consequences if I fail? How Likely is it That I will Need to Protect it? How Much Trouble am I Willing to go Through to try to Prevent Potential Consequences? Security Planning as a Regular Practice  What do you Want to Hide?</description>
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>https://natty-warhol.github.io/posts/2020/07/welcome/</link>
-      <pubDate>Thu, 23 Jul 2020 04:10:45 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/posts/2020/07/welcome/</guid>
-      <description>Welcome to the First Post Hello all! Have no fear, Tasha is here! On this site, you can expect to find the rantings and ravings of I, a madperson full of cynicism, and a general enjoyment of technology and art.
-Get Involved If you see anything on here that triggers you or makes you have to say something back to me, feel free to contact me @ &amp;hellip;nowhere yet, we&amp;rsquo;ll get back to that.</description>
     </item>
     
   </channel>

@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 28 Jul 2020 08:38:19 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2020 13:24:15 -0700</lastBuildDate>
     
 	<atom:link href="https://natty-warhol.github.io/personal_logs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Day_09</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_09/</link>
+      <pubDate>Tue, 04 Aug 2020 13:24:15 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_09/</guid>
+      <description>Switched My OS!! Huzzah! I have done it! I am free from Solus Linux!
+Don&amp;rsquo;t get me wrong, I love the damned Operating System, I just started feeling claustrophobic with the systemd and the perfect UX and clean UI&amp;hellip; it was just&amp;hellip;. too perfect&amp;hellip;
+So what did I switch to? I did a base install of Artix Linux! I love it so far! I went with the runit instance, because it seemed to have the best server/desktop useability.</description>
+    </item>
     
     <item>
       <title>Day_07</title>
