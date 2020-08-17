@@ -6,8 +6,108 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 23 Jul 2020 05:07:07 -0700</lastBuildDate>
+        <lastBuildDate>Tue, 11 Aug 2020 01:02:41 -0700</lastBuildDate>
         <atom:link href="https://natty-warhol.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ArtixAndRunit Install</title>
+            <link>https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/</link>
+            <pubDate>Tue, 11 Aug 2020 01:02:41 -0700</pubDate>
+            
+            <guid>https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/</guid>
+            <description>Switching to Artix Linux Personal Walkthrough What&amp;rsquo;s my Mission? I want to improve performance, security, and declutter my system by subverting Systemd. I also intend to encrypt my hard drive, as well as partial encryption of my internet traffic, whilst also using flatpak on large-library projects to avoid any system breakages.
+USB Installation Grab the ISO from ArtixLinux.org, install with:
+ sudo dd bs=4M if=path/to/image-runit.iso of=/dev/sdx status=progress oflag=sync
+ Installation &amp;ndash; Prepare When booting into a UEFI Laptop (any laptop made in the past 8 years just about), make sure it is in UEFI mode, despite how you might feel, it is a form of check, and good for software security.</description>
+            <content type="html"><![CDATA[<h1 id="switching-to-artix-linux-personal-walkthrough">Switching to Artix Linux Personal Walkthrough</h1>
+<h2 id="whats-my-mission">What&rsquo;s my Mission?</h2>
+<p>I want to improve performance, security, and declutter my system by subverting Systemd. I also intend to encrypt my hard drive, as well as partial encryption of my internet traffic, whilst also using flatpak on large-library projects to avoid any system breakages.</p>
+<h2 id="usb-installation">USB Installation</h2>
+<p>Grab the ISO from ArtixLinux.org, install with:</p>
+<blockquote>
+<p>sudo dd bs=4M if=path/to/image-runit.iso of=/dev/sdx status=progress oflag=sync</p>
+</blockquote>
+<h2 id="installation----prepare">Installation &ndash; Prepare</h2>
+<p>When booting into a UEFI Laptop (any laptop made in the past 8 years just about), make sure it is in UEFI mode, despite how you might feel, it is a form of check, and good for software security. Without booting into the USB without UEFI mode, installation may not work.</p>
+<p>Ensure that there is an internet connection. The easiest way to do so, is to use an ethernet cable. Otherwise&hellip;. <em>shrugs</em> I&rsquo;m not sure what to do with this one, I didn&rsquo;t really look into it because I&rsquo;m lazy and they didn&rsquo;t use netctl like Mainline Arch does.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="formatting">Formatting</h3>
+<p>Got to use Luks Encryption!</p>
+<p>parted /dev/sdx<br>
+mklabel gpt<br>
+mkpart ESP fat32 1Mib 512Mib<br>
+set 1 boot on<br>
+name 1 efi</p>
+<p>mkpart primary linux-swap 512Mib 8Gb<br>
+name 2 swap</p>
+<p>mkpart primary 8Gb 100%<br>
+set 3 lvm on<br>
+name 3 lvm<br>
+print</p>
+<p>modprobe dm-crypt
+modprobe dm-mod</p>
+<p>cryptsetup luksFormat -v -s 512 -h sha512 /dev/sdx3</p>
+<p>cryptsetup open <!-- raw HTML omitted --> <!-- raw HTML omitted -->
+<em><!-- raw HTML omitted --></em> is the device to create under /dev/mapper<br>
+<em><!-- raw HTML omitted --></em> is the encrypted device</p>
+<p><strong>Example: cryptsetup open /dev/sdx3 luks_lvm</strong></p>
+<h3 id="partition-configuration">Partition Configuration</h3>
+<p>Create physical volume<br>
+pvcreate /dev/mapper/luks_lvm</p>
+<p>vgcreate artix /dev/mapper/luks_lvm</p>
+<p>lvcreate -n root -L XXG arch<br>
+lvcreate -n home -L XXG arch</p>
+<p>Format partitions<br>
+mkfs.fat -F32 /dev/sdx1
+mkfs.ext4 -L root /dev/mapper/arch-root
+mkfs.ext4 -L home /dev/mapper/arch-home
+mkswap /dev/sdx2</p>
+<h3 id="mount-partitions">Mount Partitions</h3>
+<p>swapon /dev/sdx2<br>
+mount /dev/mapper/arch-root /mnt<br>
+mkdir -p /mnt/{home,boot}<br>
+mount /dev/sdx1 /mnt/boot<br>
+mount /dev/mapper/arch-home /mnt/home<br>
+mkdir /mnt/boot/efi</p>
+<p>lsblk -f</p>
+<h3 id="install-linux">Install Linux</h3>
+<p>basestrap /mnt base base-devel runit elogind-runit vim htop openssh linux-zen linux-firmware<br>
+fstabgen -U /mnt &raquo; /mnt/etc/fstab</p>
+<p>artools-chroot /mnt</p>
+<h3 id="base-configuration">Base Configuration</h3>
+<p>ln -sf /usr/share/zoneinfo/America/Los_Angeles<br>
+hwclock &ndash;systohc</p>
+<p>vim /etc/locale.gen<br>
+locale-gen</p>
+<p>vim /etc/locale.conf</p>
+<blockquote>
+<p>export LANG=&quot;en_US.UTF-8&rdquo;<br>
+export LC_COLLATE=&quot;C&rdquo;</p>
+</blockquote>
+<h4 id="boot-loader">Boot Loader</h4>
+<p>pacman -S grub os-prober efibootmgr<br>
+grub-install &ndash;target=x86_64-efi &ndash;efi-directory=/boot &ndash;bootloader-id=grub<br>
+grub-mkconfig -o /boot/grub/grub.cfg</p>
+<h4 id="users">Users</h4>
+<p>passwd</p>
+<p>useradd -m user<br>
+passwd user</p>
+<h4 id="network-configuration">Network Configuration</h4>
+<p>vim /etc/hostname<br>
+<em>insert hostname here</em><br>
+pacman -S dhcpcd networkmanager networkmanager-openvpn</p>
+<h3 id="all-done">All Done!</h3>
+<p>exit<br>
+umount -R /mnt<br>
+reboot</p>
+<h2 id="post-installation-with-xorg">Post Installation with Xorg</h2>
+<p>pacman -S xorg libva-utils libmfx intel-media-driver intel-gmmlib xf86-video-intel vulkan-intel intel-ucode herbstluftwm git trizen dzen2 dmenu polybar pass gpgme gnupg flatpak firefox htop libdvdcss libbluray rtorrent pulseaudio pavucontrol pamixer pulseaudio-bluetooth bluez-tools bluez-utils</p>
+<p>trizen -S rxvt-unicode-pixbuf-patched urxvt-tabbedex hosts-update plex-media-player</p>
+<p>git clone <a href="https://github.com/natty-warhol/dotfiles-Github.git">https://github.com/natty-warhol/dotfiles-Github.git</a></p>
+<h2 id="flatpak">Flatpak</h2>
+<p>flatpak install com.makemkv.MakeMKV com.rawtherapee.RawTherapee org.gimp.GIMP org.inkscape.Inkscape com.mojang.Minecraft io.lbry.lbry-app net.jami.Jami org.audacityteam.Audacity org.signal.Signal org.telegram.desktop org.kde.Kdenlive</p>
+]]></content>
+        </item>
         
         <item>
             <title>Internet Security - A Work in Progress</title>
