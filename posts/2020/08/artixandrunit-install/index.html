@@ -178,79 +178,131 @@ USB Installation Grab the ISO from ArtixLinux.org, install with:
 <h2 id="installation">Installation</h2>
 <h3 id="formatting">Formatting</h3>
 <p>Got to use Luks Encryption!</p>
+<blockquote>
 <p>parted /dev/sdx<br>
 mklabel gpt<br>
 mkpart ESP fat32 1Mib 512Mib<br>
 set 1 boot on<br>
 name 1 efi</p>
+</blockquote>
+<blockquote>
 <p>mkpart primary linux-swap 512Mib 8Gb<br>
 name 2 swap</p>
+</blockquote>
+<blockquote>
 <p>mkpart primary 8Gb 100%<br>
 set 3 lvm on<br>
 name 3 lvm<br>
 print</p>
+</blockquote>
+<blockquote>
 <p>modprobe dm-crypt
 modprobe dm-mod</p>
+</blockquote>
+<blockquote>
 <p>cryptsetup luksFormat -v -s 512 -h sha512 /dev/sdx3</p>
+</blockquote>
+<blockquote>
 <p>cryptsetup open <!-- raw HTML omitted --> <!-- raw HTML omitted -->
 <em><!-- raw HTML omitted --></em> is the device to create under /dev/mapper<br>
 <em><!-- raw HTML omitted --></em> is the encrypted device</p>
+</blockquote>
 <p><strong>Example: cryptsetup open /dev/sdx3 luks_lvm</strong></p>
 <h3 id="partition-configuration">Partition Configuration</h3>
-<p>Create physical volume<br>
-pvcreate /dev/mapper/luks_lvm</p>
+<p>Create physical volume</p>
+<blockquote>
+<p>pvcreate /dev/mapper/luks_lvm</p>
+</blockquote>
+<blockquote>
 <p>vgcreate artix /dev/mapper/luks_lvm</p>
+</blockquote>
+<blockquote>
 <p>lvcreate -n root -L XXG arch<br>
 lvcreate -n home -L XXG arch</p>
+</blockquote>
+<blockquote>
 <p>Format partitions<br>
 mkfs.fat -F32 /dev/sdx1
 mkfs.ext4 -L root /dev/mapper/arch-root
 mkfs.ext4 -L home /dev/mapper/arch-home
 mkswap /dev/sdx2</p>
+</blockquote>
 <h3 id="mount-partitions">Mount Partitions</h3>
+<blockquote>
 <p>swapon /dev/sdx2<br>
 mount /dev/mapper/arch-root /mnt<br>
 mkdir -p /mnt/{home,boot}<br>
 mount /dev/sdx1 /mnt/boot<br>
 mount /dev/mapper/arch-home /mnt/home<br>
 mkdir /mnt/boot/efi</p>
+</blockquote>
+<blockquote>
 <p>lsblk -f</p>
+</blockquote>
 <h3 id="install-linux">Install Linux</h3>
+<blockquote>
 <p>basestrap /mnt base base-devel runit elogind-runit vim htop openssh linux-zen linux-firmware<br>
 fstabgen -U /mnt &raquo; /mnt/etc/fstab</p>
+</blockquote>
+<blockquote>
 <p>artools-chroot /mnt</p>
+</blockquote>
 <h3 id="base-configuration">Base Configuration</h3>
+<blockquote>
 <p>ln -sf /usr/share/zoneinfo/America/Los_Angeles<br>
 hwclock &ndash;systohc</p>
+</blockquote>
+<blockquote>
 <p>vim /etc/locale.gen<br>
 locale-gen</p>
+</blockquote>
+<blockquote>
 <p>vim /etc/locale.conf</p>
 <blockquote>
 <p>export LANG=&quot;en_US.UTF-8&rdquo;<br>
 export LC_COLLATE=&quot;C&rdquo;</p>
 </blockquote>
+</blockquote>
 <h4 id="boot-loader">Boot Loader</h4>
+<blockquote>
 <p>pacman -S grub os-prober efibootmgr<br>
 grub-install &ndash;target=x86_64-efi &ndash;efi-directory=/boot &ndash;bootloader-id=grub<br>
 grub-mkconfig -o /boot/grub/grub.cfg</p>
+</blockquote>
 <h4 id="users">Users</h4>
+<blockquote>
 <p>passwd</p>
+</blockquote>
+<blockquote>
 <p>useradd -m user<br>
 passwd user</p>
+</blockquote>
 <h4 id="network-configuration">Network Configuration</h4>
+<blockquote>
 <p>vim /etc/hostname<br>
 <em>insert hostname here</em><br>
 pacman -S dhcpcd networkmanager networkmanager-openvpn</p>
+</blockquote>
 <h3 id="all-done">All Done!</h3>
+<blockquote>
 <p>exit<br>
 umount -R /mnt<br>
 reboot</p>
+</blockquote>
 <h2 id="post-installation-with-xorg">Post Installation with Xorg</h2>
+<blockquote>
 <p>pacman -S xorg libva-utils libmfx intel-media-driver intel-gmmlib xf86-video-intel vulkan-intel intel-ucode herbstluftwm git trizen dzen2 dmenu polybar pass gpgme gnupg flatpak firefox htop libdvdcss libbluray rtorrent pulseaudio pavucontrol pamixer pulseaudio-bluetooth bluez-tools bluez-utils</p>
+</blockquote>
+<blockquote>
 <p>trizen -S rxvt-unicode-pixbuf-patched urxvt-tabbedex hosts-update plex-media-player</p>
+</blockquote>
+<blockquote>
 <p>git clone <a href="https://github.com/natty-warhol/dotfiles-Github.git">https://github.com/natty-warhol/dotfiles-Github.git</a></p>
+</blockquote>
 <h2 id="flatpak">Flatpak</h2>
+<blockquote>
 <p>flatpak install com.makemkv.MakeMKV com.rawtherapee.RawTherapee org.gimp.GIMP org.inkscape.Inkscape com.mojang.Minecraft io.lbry.lbry-app net.jami.Jami org.audacityteam.Audacity org.signal.Signal org.telegram.desktop org.kde.Kdenlive</p>
+</blockquote>
 
       </div>
     </article>
