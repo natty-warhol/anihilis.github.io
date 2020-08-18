@@ -106,6 +106,18 @@ trizen -S rxvt-unicode-pixbuf-patched urxvt-tabbedex hosts-update plex-media-pla
 git clone https://github.com/natty-warhol/dotfiles-Github.git  
 </code></pre><h2 id="flatpak">Flatpak</h2>
 <pre><code>flatpak install com.makemkv.MakeMKV com.rawtherapee.RawTherapee org.gimp.GIMP org.inkscape.Inkscape com.mojang.Minecraft io.lbry.lbry-app net.jami.Jami org.audacityteam.Audacity org.signal.Signal org.telegram.desktop org.kde.Kdenlive 
+</code></pre><h2 id="fingerprint-reader">Fingerprint Reader</h2>
+<pre><code>trizen -S fwupd usbutils fprintd imagemagick  
+</code></pre><p>Edit the config files inside of /etc/pam.d/</p>
+<p>system-local-login</p>
+<pre><code>auth	sufficient	pam_fprintd.so
+auth	sufficient	pam_thinkfinger.so
+</code></pre><p>su</p>
+<pre><code>auth	sufficient	pam_fprintd.so
+</code></pre><p>sudo</p>
+<pre><code>auth	sufficient	pam_fprintd.so  
+</code></pre><p>physlock</p>
+<pre><code>auth	sufficient	pam_fprintd.so
 </code></pre>]]></content>
         </item>
         

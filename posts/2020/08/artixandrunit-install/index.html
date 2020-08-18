@@ -51,7 +51,7 @@ USB Installation Grab the ISO from ArtixLinux.org, install with:
  Installation &ndash; Prepare When booting into a UEFI Laptop (any laptop made in the past 8 years just about), make sure it is in UEFI mode, despite how you might feel, it is a form of check, and good for software security.">
 <meta itemprop="datePublished" content="2020-08-11T01:02:41-07:00" />
 <meta itemprop="dateModified" content="2020-08-11T01:02:41-07:00" />
-<meta itemprop="wordCount" content="435">
+<meta itemprop="wordCount" content="469">
 <meta itemprop="image" content="https://natty-warhol.github.io"/>
 
 
@@ -251,6 +251,18 @@ trizen -S rxvt-unicode-pixbuf-patched urxvt-tabbedex hosts-update plex-media-pla
 git clone https://github.com/natty-warhol/dotfiles-Github.git  
 </code></pre><h2 id="flatpak">Flatpak</h2>
 <pre><code>flatpak install com.makemkv.MakeMKV com.rawtherapee.RawTherapee org.gimp.GIMP org.inkscape.Inkscape com.mojang.Minecraft io.lbry.lbry-app net.jami.Jami org.audacityteam.Audacity org.signal.Signal org.telegram.desktop org.kde.Kdenlive 
+</code></pre><h2 id="fingerprint-reader">Fingerprint Reader</h2>
+<pre><code>trizen -S fwupd usbutils fprintd imagemagick  
+</code></pre><p>Edit the config files inside of /etc/pam.d/</p>
+<p>system-local-login</p>
+<pre><code>auth	sufficient	pam_fprintd.so
+auth	sufficient	pam_thinkfinger.so
+</code></pre><p>su</p>
+<pre><code>auth	sufficient	pam_fprintd.so
+</code></pre><p>sudo</p>
+<pre><code>auth	sufficient	pam_fprintd.so  
+</code></pre><p>physlock</p>
+<pre><code>auth	sufficient	pam_fprintd.so
 </code></pre>
       </div>
     </article>
@@ -267,7 +279,7 @@ git clone https://github.com/natty-warhol/dotfiles-Github.git
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        435 Words
+        469 Words
       </p>
 
       <p>
