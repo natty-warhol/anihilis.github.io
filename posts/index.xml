@@ -104,9 +104,19 @@ reboot
 trizen -S rxvt-unicode-pixbuf-patched urxvt-tabbedex hosts-update plex-media-player 
   
 git clone https://github.com/natty-warhol/dotfiles-Github.git  
-</code></pre><h3 id="flatpak">Flatpak</h3>
-<pre><code>flatpak install com.makemkv.MakeMKV com.rawtherapee.RawTherapee org.gimp.GIMP org.inkscape.Inkscape com.mojang.Minecraft io.lbry.lbry-app net.jami.Jami org.audacityteam.Audacity org.signal.Signal org.telegram.desktop org.kde.Kdenlive 
-</code></pre><h3 id="fingerprint-reader">Fingerprint Reader</h3>
+</code></pre><h3 id="firefox-setup">Firefox Setup</h3>
+<pre><code>git clone https://github.com/Perflyst/firefox-privacy-profile.git  
+</code></pre><p>Create new Firefox Profile, ensure you can remember the profile association. Then copy the files in the folder into the profile folder in your /home directory.</p>
+<p>go to <!-- raw HTML omitted -->HexDSL&rsquo;s Gitlab<!-- raw HTML omitted --> for extension options and so on.</p>
+<h3 id="firefox-alternative">Firefox Alternative</h3>
+<p>An alternative to firefox (for lighter weight needs) you can use tabbed with vimb</p>
+<pre><code>pacman -S vimb  
+trizen -S tabbed  
+</code></pre><p>then execute with</p>
+<pre><code>tabbed vimb -e  
+</code></pre><h3 id="flatpak----thinkpad">Flatpak &ndash; Thinkpad</h3>
+<pre><code>flatpak install com.makemkv.MakeMKV com.rawtherapee.RawTherapee org.gimp.GIMP org.inkscape.Inkscape net.jami.Jami org.audacityteam.Audacity org.signal.Signal org.telegram.desktop org.kde.Kdenlive 
+</code></pre><h3 id="fingerprint-reader----thinkpad">Fingerprint Reader &ndash; Thinkpad</h3>
 <pre><code>trizen -S fwupd usbutils fprintd imagemagick  
 </code></pre><p>Edit the config files inside of /etc/pam.d/</p>
 <p>system-local-login</p>
@@ -118,7 +128,34 @@ auth	sufficient	pam_thinkfinger.so
 <pre><code>auth	sufficient	pam_fprintd.so  
 </code></pre><p>physlock</p>
 <pre><code>auth	sufficient	pam_fprintd.so
-</code></pre>]]></content>
+</code></pre><h2 id="server-extrasedits">Server Extras/Edits</h2>
+<p>Basic Hard Drive Configuration:<br>
+SDA1 /
+SDA2 /home
+SDA3 SWAP
+SDB1 /home/plex/media/Music
+SDC1 /home/plex/media/Movies
+SDD1 /hom/plex/media/TV\ Shows</p>
+<p>User Accounts Set Up:<br>
+Root &ndash;never touch after setup<br>
+Media_XYZ &ndash;lightly uplifted account for SSH access as well as X server.
+Plex &ndash;minimal root priviliges, don&rsquo;t forget to chown plex:plex mounted media drives.</p>
+<p><strong>Don&rsquo;t Forget!1</strong></p>
+<ul>
+<li>noip ping script for DNS UPnP</li>
+<li>Setup Syncthing with runit daemon</li>
+<li>Set SSHD to port 64</li>
+<li>Setup UFW with runit</li>
+</ul>
+<h3 id="plex-docker-setup">Plex Docker Setup</h3>
+<pre><code>pacman -S docker docker-runit  
+ln -s /etc/runit/sv/docker /run/runit/service  
+</code></pre><p>Docker install and set-up instruction can be found <!-- raw HTML omitted -->here<!-- raw HTML omitted -->.</p>
+<p>Required commands to remember after setup are:</p>
+<pre><code>docker start plex  
+docker stop plex  
+</code></pre><p>Simply for restarting and updating.</p>
+]]></content>
         </item>
         
         <item>
