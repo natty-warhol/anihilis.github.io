@@ -15,11 +15,12 @@
             <pubDate>Tue, 11 Aug 2020 01:02:41 -0700</pubDate>
             
             <guid>https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/</guid>
-            <description>Switching to Artix Linux Personal Walkthrough What&amp;rsquo;s my Mission? I want to improve performance, security, and declutter my system by subverting Systemd. I also intend to encrypt my hard drive, as well as partial encryption of my internet traffic, whilst also using flatpak on large-library projects to avoid any system breakages.
+            <description>Switching to Artix Personal Walkthrough What&amp;rsquo;s my Mission? I want to improve performance, security, and declutter my system by subverting Systemd. I also intend to encrypt my hard drive, as well as partial encryption of my internet traffic, whilst also using flatpak on large-library projects to avoid any system breakages.
 USB Installation Grab the ISO from ArtixLinux.org, install with:
  sudo dd bs=4M if=path/to/image-runit.iso of=/dev/sdx status=progress oflag=sync
  Installation &amp;ndash; Prepare When booting into a UEFI Laptop (any laptop made in the past 8 years just about), make sure it is in UEFI mode, despite how you might feel, it is a form of check, and good for software security.</description>
-            <content type="html"><![CDATA[<h1 id="switching-to-artix-linux-personal-walkthrough">Switching to Artix Linux Personal Walkthrough</h1>
+            <content type="html"><![CDATA[<h1 id="switching-to-artix">Switching to Artix</h1>
+<h2 id="personal-walkthrough">Personal Walkthrough</h2>
 <h2 id="whats-my-mission">What&rsquo;s my Mission?</h2>
 <p>I want to improve performance, security, and declutter my system by subverting Systemd. I also intend to encrypt my hard drive, as well as partial encryption of my internet traffic, whilst also using flatpak on large-library projects to avoid any system breakages.</p>
 <h2 id="usb-installation">USB Installation</h2>
