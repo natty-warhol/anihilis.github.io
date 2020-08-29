@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 20 Aug 2020 09:28:11 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2020 11:51:35 -0700</lastBuildDate>
     
 	<atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Day_12</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_12/</link>
+      <pubDate>Thu, 27 Aug 2020 11:51:35 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_12/</guid>
+      <description>P.O.S. Point of Sale System I am working on a Proof of Concept POS System for my work, because I am tired of the constant problems presenting themselves when I least want them to. I am looking to switch to a completely disconnected, open source solution for work with multiple systems across two states and 5 stores. They are currently using very outdated (almost XP era) PCs with windows 10 locked down, with a shit POS system, and a terrible set up of permissions for apps and users.</description>
+    </item>
     
     <item>
       <title>Day_11</title>
@@ -100,15 +109,6 @@ I don&amp;rsquo;t care what you think about masks or social distancing, it&amp;r
       
       <guid>https://natty-warhol.github.io/personal_logs/day_03/</guid>
       <description>My Dream for Dystopia I long that one day, we will be free from the confines of a rigged Republic and a suffocating Capitalist regime. No, but like, seriously. I really want all out anarchy. Not Mad Max folley, but like&amp;hellip;. Waterworld&amp;hellip;. or Willow. Fuck Star Wars though. I would rather suffer in the Sarlack pit than have to deal with that confusing mess. You&amp;rsquo;re either living in a Dictatorship, or in a society of people with stick-up-your-butt-itis.</description>
-    </item>
-    
-    <item>
-      <title>Day_02</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_02/</link>
-      <pubDate>Thu, 23 Jul 2020 10:52:02 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_02/</guid>
-      <description>Day two on this blog&amp;hellip; My partner is signing up for Medicare right now, and I&amp;rsquo;m working on my internet security sheet. Her father is in town to help her out, I enjoy the company. With FISA being put to good use in Portland right now, I don&amp;rsquo;t really feel comfortable going outside right now. I don&amp;rsquo;t care if I&amp;rsquo;m a goody two-shoes that doesn&amp;rsquo;t do anything, I have friends, and there are others out there who are doing very dangerous things.</description>
     </item>
     
   </channel>
