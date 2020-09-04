@@ -100,7 +100,7 @@ pacman -S dhcpcd networkmanager networkmanager-openvpn
 umount -R /mnt  
 reboot  
 </code></pre><h2 id="post-installation-with-xorg">Post Installation with Xorg</h2>
-<pre><code>pacman -S xorg libva-utils libmfx intel-media-driver intel-gmmlib xf86-video-intel vulkan-intel intel-ucode herbstluftwm git trizen dzen2 dmenu polybar pass gpgme gnupg flatpak firefox htop libdvdcss libbluray rtorrent pulseaudio pavucontrol pamixer pulseaudio-bluetooth bluez-tools bluez-utils
+<pre><code>pacman -S xorg libva-utils libmfx intel-media-driver intel-gmmlib xf86-video-intel vulkan-intel intel-ucode herbstluftwm git trizen dzen2 dmenu polybar pass gpgme gnupg flatpak firefox htop libdvdcss libbluray rtorrent pulseaudio pavucontrol pamixer pulseaudio-bluetooth bluez-tools bluez-utils xdotool
   
 trizen -S rxvt-unicode-pixbuf-patched urxvt-tabbedex hosts-update plex-media-player 
   
