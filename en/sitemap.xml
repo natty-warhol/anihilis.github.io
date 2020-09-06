@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://natty-warhol.github.io/</loc>
-    <lastmod>2020-09-03T07:07:42-07:00</lastmod>
+    <lastmod>2020-09-03T12:00:45-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -15,6 +15,36 @@
                 hreflang="en"
                 href="https://natty-warhol.github.io/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-notes/</loc>
+    <lastmod>2020-09-03T12:00:45-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/posts/</loc>
+    <lastmod>2020-09-03T12:00:45-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/tags/</loc>
+    <lastmod>2020-09-03T12:00:45-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://natty-warhol.github.io/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://natty-warhol.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/tags/untagged/</loc>
+    <lastmod>2020-09-03T12:00:45-07:00</lastmod>
   </url>
   
   <url>
@@ -38,12 +68,7 @@
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/</loc>
-    <lastmod>2020-08-11T01:02:41-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://natty-warhol.github.io/posts/</loc>
+    <loc>https://natty-warhol.github.io/posts/2020/08/artix-and-runit-install/</loc>
     <lastmod>2020-08-11T01:02:41-07:00</lastmod>
   </url>
   
@@ -99,26 +124,6 @@
   
   <url>
     <loc>https://natty-warhol.github.io/posts/2020/07/internet-security-a-work-in-progress/</loc>
-    <lastmod>2020-07-23T05:07:07-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://natty-warhol.github.io/tags/</loc>
-    <lastmod>2020-07-23T05:07:07-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://natty-warhol.github.io/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://natty-warhol.github.io/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://natty-warhol.github.io/tags/untagged/</loc>
     <lastmod>2020-07-23T05:07:07-07:00</lastmod>
   </url>
   

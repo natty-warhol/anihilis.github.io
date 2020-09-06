@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 03 Sep 2020 07:07:42 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2020 12:00:45 -0700</lastBuildDate>
     
 	<atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Plex Server Setup-notes</title>
+      <link>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-notes/</link>
+      <pubDate>Thu, 03 Sep 2020 12:00:45 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-notes/</guid>
+      <description>Plex Server Setup A Walkthrough I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.
+Beginning Notes I believe we can collect installation notes from the https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/. I prefer to avoid encryption so I can restart the computer remotely.</description>
+    </item>
     
     <item>
       <title>Day_13</title>
@@ -41,11 +51,11 @@ Just a couple of questions.</description>
     </item>
     
     <item>
-      <title>ArtixAndRunit Install</title>
-      <link>https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/</link>
+      <title>Artix and Runit Install</title>
+      <link>https://natty-warhol.github.io/posts/2020/08/artix-and-runit-install/</link>
       <pubDate>Tue, 11 Aug 2020 01:02:41 -0700</pubDate>
       
-      <guid>https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/</guid>
+      <guid>https://natty-warhol.github.io/posts/2020/08/artix-and-runit-install/</guid>
       <description>Switching to Artix Personal Walkthrough What&amp;rsquo;s my Mission? I want to improve performance, security, and declutter my system by subverting Systemd. I also intend to encrypt my hard drive, as well as partial encryption of my internet traffic, whilst also using flatpak on large-library projects to avoid any system breakages.
 USB Installation Grab the ISO from ArtixLinux.org, install with:
  sudo dd bs=4M if=path/to/image-runit.iso of=/dev/sdx status=progress oflag=sync
@@ -99,16 +109,6 @@ I don&amp;rsquo;t care what you think!</description>
       <guid>https://natty-warhol.github.io/personal_logs/day_05/</guid>
       <description>Using Solus I&amp;rsquo;ve been working on the Solus operating system (base kernel of Linux) for several months now (recently returned to Linux and all relevant things along from using a Macbook for a minute), as a laptop system, as well as for my server (boy was that a mistake).
 I&amp;rsquo;ve reached that point however, where everything is superbly streamlined, and everything works without error, ever. AND IT&amp;rsquo;S SO BORING. I&amp;rsquo;ve always had the issue of being bored of my tech when I&amp;rsquo;m not messing with it from the most basic levels.</description>
-    </item>
-    
-    <item>
-      <title>Day_04</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_04/</link>
-      <pubDate>Sat, 25 Jul 2020 08:03:02 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_04/</guid>
-      <description>Work can be a Bitch Goddamn, work is a bitch. During all this COVID bullshit, I have to sell people sex toys like nothing is going on. Everyone wants to feel up the toys, they wanna come in a use our arcades, they wanna come in WITH NO MASK.
-I don&amp;rsquo;t care what you think about masks or social distancing, it&amp;rsquo;s important to respect other&amp;rsquo;s wishes and personal space. Fuck you if you refuse to wear a mask to prove some bullshit point.</description>
     </item>
     
   </channel>

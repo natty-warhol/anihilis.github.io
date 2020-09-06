@@ -6,15 +6,68 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Tue, 11 Aug 2020 01:02:41 -0700</lastBuildDate>
+        <lastBuildDate>Thu, 03 Sep 2020 12:00:45 -0700</lastBuildDate>
         <atom:link href="https://natty-warhol.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>ArtixAndRunit Install</title>
-            <link>https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/</link>
+            <title>Plex Server Setup-notes</title>
+            <link>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-notes/</link>
+            <pubDate>Thu, 03 Sep 2020 12:00:45 -0700</pubDate>
+            
+            <guid>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-notes/</guid>
+            <description>Plex Server Setup A Walkthrough I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.
+Beginning Notes I believe we can collect installation notes from the https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/. I prefer to avoid encryption so I can restart the computer remotely.</description>
+            <content type="html"><![CDATA[<h1 id="plex-server-setup">Plex Server Setup</h1>
+<h2 id="a-walkthrough">A Walkthrough</h2>
+<p>I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.</p>
+<h3 id="beginning-notes">Beginning Notes</h3>
+<p>I believe we can collect installation notes from the <!-- raw HTML omitted --><a href="https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/">https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/</a><!-- raw HTML omitted -->. I prefer to avoid encryption so I can restart the computer remotely.</p>
+<p>Mapping looks something like this:</p>
+<blockquote>
+<p>/dev/sda</p>
+<blockquote>
+<p>/dev/sda1 -&gt; /boot<br>
+/dev/sda2 -&gt; /boot/efi<br>
+/dev/sda3 -&gt; /<br>
+/dev/sda4 -&gt; SWAP<br>
+/dev/sdb1 -&gt; /home/plex/media/Movies<br>
+/dev/sdc1 -&gt; /home/plex/media/TV<br>
+/dev/sdd1 -&gt; /home/plex/meida/Music</p>
+</blockquote>
+</blockquote>
+<h3 id="user-accounts-set-up">User Accounts Set Up:</h3>
+<p>You should only ever use <code>root</code> for administration and installation purposes. So in this case, we are setting up a very hard password for it, and writing it down somewhere to never be used again.</p>
+<p>I like to give myself a sudo-able user for SSHing into with, when setting up accounts, this is the only one that should have sudo permissions. Following the creation of the <em>administrative</em> account, we can go on to the Plex account.</p>
+<p>With the media/Plex account, I like to give it almost no permissions, I give it access to read the media hard drives (which should be mounted to this account anyways), and this is where the docker server will be planted.</p>
+<h3 id="good-measures">Good Measures</h3>
+<p>Before setting up any port forwarding or any internet access, I like to set up security measures. There will be no VPN as this will cause my ports to be blocked from plex. Instead, I change the DNS either to 1.1.1.1 or Quad9, as well as set up UFW.</p>
+<p>With UFW I set the defaults to deny all incoming except for a designated plex and SSH port (which should be changed from the default ports to at least 4 digit ports (5 in Plex&rsquo;s case)</p>
+<p>After this, Things should be fine, all the internet access that will be allowd to this device anyway will be limited.</p>
+<h3 id="plex-installation">Plex Installation</h3>
+<p>As the administrative user, go ahead an install docker as well as the docker init script (runit for me).</p>
+<pre><code>pacman -S docker docker-runit  
+ln -s /etc/runit/sv/docker /run/runit/service  
+</code></pre><p>Docker install and set-up instruction can be found <!-- raw HTML omitted -->here<!-- raw HTML omitted -->.</p>
+<p>Required commands to remember after setup are:</p>
+<pre><code>docker start plex  
+docker stop plex  
+</code></pre><p>Simply for restarting and updating.</p>
+<p>With the commands run from that website, the VM will only be able to read the files on the media drives, and no other drives on the system.</p>
+<p>Voila!</p>
+<h3 id="ps">P.S.</h3>
+<p>After you&rsquo;re all done, there are some tools I can recommend for you!<br>
+Since the server will basically only be able to read the media files, I have ffmpeg set up with H.265 for compression when needed through the administrative account.</p>
+<p>And for health checking I use glances mostly (it shows the temps).</p>
+<p>For media transfers, I recommend Syncthing, as it will allow you to use local internet. Just remember to check your sync options, I always feel more comfortable when my sync folders are one way read/sync.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Artix and Runit Install</title>
+            <link>https://natty-warhol.github.io/posts/2020/08/artix-and-runit-install/</link>
             <pubDate>Tue, 11 Aug 2020 01:02:41 -0700</pubDate>
             
-            <guid>https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/</guid>
+            <guid>https://natty-warhol.github.io/posts/2020/08/artix-and-runit-install/</guid>
             <description>Switching to Artix Personal Walkthrough What&amp;rsquo;s my Mission? I want to improve performance, security, and declutter my system by subverting Systemd. I also intend to encrypt my hard drive, as well as partial encryption of my internet traffic, whilst also using flatpak on large-library projects to avoid any system breakages.
 USB Installation Grab the ISO from ArtixLinux.org, install with:
  sudo dd bs=4M if=path/to/image-runit.iso of=/dev/sdx status=progress oflag=sync
