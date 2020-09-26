@@ -51,7 +51,7 @@ USB Installation Grab the ISO from ArtixLinux.org, install with:
  Installation &ndash; Prepare When booting into a UEFI Laptop (any laptop made in the past 8 years just about), make sure it is in UEFI mode, despite how you might feel, it is a form of check, and good for software security.">
 <meta itemprop="datePublished" content="2020-08-11T01:02:41-07:00" />
 <meta itemprop="dateModified" content="2020-08-11T01:02:41-07:00" />
-<meta itemprop="wordCount" content="651">
+<meta itemprop="wordCount" content="726">
 <meta itemprop="image" content="https://natty-warhol.github.io"/>
 
 
@@ -276,17 +276,32 @@ auth	sufficient	pam_thinkfinger.so
 </code></pre><p>physlock</p>
 <pre><code>auth	sufficient	pam_fprintd.so
 </code></pre><h2 id="server-extrasedits">Server Extras/Edits</h2>
-<p>Basic Hard Drive Configuration:<br>
+<p>**Basic Hard Drive Configuration: **
 SDA1 /
 SDA2 /home
 SDA3 SWAP
 SDB1 /home/plex/media/Music
 SDC1 /home/plex/media/Movies
 SDD1 /hom/plex/media/TV\ Shows</p>
-<p>User Accounts Set Up:<br>
+<p>**User Accounts Set Up: **
 Root &ndash;never touch after setup<br>
 Media_XYZ &ndash;lightly uplifted account for SSH access as well as X server.
 Plex &ndash;minimal root priviliges, don&rsquo;t forget to chown plex:plex mounted media drives.</p>
+<p><strong>NZBGet</strong></p>
+<pre><code>sudo pacman -S nzbget  
+sudo useradd -m -G nzbget
+</code></pre><pre><code>sudo vim /var/lib/nzbget/.nzbget  
+</code></pre><blockquote>
+<p>MainDir=/var/lib/nzbget
+DestDir=/var/lib/nzbget/Downloads</p>
+</blockquote>
+<p>So on, So on, until all the addresses are set to /var/lib/nzbget&hellip;<br>
+Account and server setup is backed up
+<!-- raw HTML omitted -->Personal note:
+- Try to add the user with &ldquo;-d /home/$USER/Downloads/NZBGet&rdquo;
+- Move the directories in /var/lib to the home directory for nzbget
+- Move the username and password to a text file, and link from the main config
+<!-- raw HTML omitted --></p>
 <p><strong>Don&rsquo;t Forget!1</strong></p>
 <ul>
 <li>noip ping script for DNS UPnP</li>
@@ -318,7 +333,7 @@ docker stop plex
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        651 Words
+        726 Words
       </p>
 
       <p>
