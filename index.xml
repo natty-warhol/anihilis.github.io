@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 26 Sep 2020 16:54:11 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Sep 2020 15:34:27 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_17</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_17/</link>
+      <pubDate>Mon, 28 Sep 2020 15:34:27 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_17/</guid>
+      <description>Colour Scheming is a Strange Beast I love pretty colours, but I hate having to set up my system with whole new colour scheming.
+I&amp;rsquo;m working on swtiching from the Dracula theme to the Nord theme (I hate saturated work stations&amp;hellip; too busy for long term work). GODDAMN I just wish there was a way to set up all the different config files to respond to the Xresources&amp;hellip;.. hmm&amp;hellip; Maybe I could figure something out&amp;hellip;.</description>
+    </item>
+    
     <item>
       <title>Day_16</title>
       <link>https://natty-warhol.github.io/personal_logs/day_16/</link>
@@ -94,17 +104,6 @@ USB Installation Grab the ISO from ArtixLinux.org, install with:
       
       <guid>https://natty-warhol.github.io/personal_logs/day_10/</guid>
       <description>Artix Linux Security (Should This be put in Posts? Y.O.L.O. why not Both?) I&amp;rsquo;m on tiling! No buttons for me!! So yeah, I basically completely switched to using cli everything, and so for networking I am using NetworkManager, it&amp;rsquo;s been weird having to get used to it&amp;hellip; It&amp;rsquo;s like it&amp;rsquo;s too easy for me&amp;hellip; that I can&amp;rsquo;t figure it out? Like it makes sense, but&amp;hellip; I can&amp;rsquo;t use my intuiting? Anyways, I still can&amp;rsquo;t figure out how to use it with openvpn, and I don&amp;rsquo;t know how to use wireguard without a file&amp;hellip; and I don&amp;rsquo;t want to figure out if I have to make the file or what&amp;hellip;.</description>
-    </item>
-    
-    <item>
-      <title>Day_09</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_09/</link>
-      <pubDate>Tue, 04 Aug 2020 13:24:15 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_09/</guid>
-      <description>Switched My OS!! Huzzah! I have done it! I am free from Solus Linux!
-Don&amp;rsquo;t get me wrong, I love the damned Operating System, I just started feeling claustrophobic with the systemd and the perfect UX and clean UI&amp;hellip; it was just&amp;hellip;. too perfect&amp;hellip;
-So what did I switch to? I did a base install of Artix Linux! I love it so far! I went with the runit instance, because it seemed to have the best server/desktop useability.</description>
     </item>
     
   </channel>
