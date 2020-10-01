@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 28 Sep 2020 15:34:27 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Sep 2020 12:05:18 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>09.30</title>
+      <link>https://natty-warhol.github.io/films/09.30.20_november/</link>
+      <pubDate>Wed, 30 Sep 2020 12:05:18 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/films/09.30.20_november/</guid>
+      <description>The Marathon Begins With: November (2017) A quick introduction into what all this is going to be&amp;hellip; Welcome! It is the end of September and the beginning of Fall, and I am here to begin my Spooky Movie Marathon! My current partner is not very accustomed to movies, much less ones that take on a edgier look of the world. I&amp;rsquo;m writing these reviews for my own fun, as all I hope to do really is show my partner the arts and stories that good movies have to tell!</description>
+    </item>
+    
     <item>
       <title>Day_17</title>
       <link>https://natty-warhol.github.io/personal_logs/day_17/</link>
@@ -95,15 +104,6 @@ Just a couple of questions.</description>
 USB Installation Grab the ISO from ArtixLinux.org, install with:
  sudo dd bs=4M if=path/to/image-runit.iso of=/dev/sdx status=progress oflag=sync
  Installation &amp;ndash; Prepare When booting into a UEFI Laptop (any laptop made in the past 8 years just about), make sure it is in UEFI mode, despite how you might feel, it is a form of check, and good for software security.</description>
-    </item>
-    
-    <item>
-      <title>Day_10</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_10/</link>
-      <pubDate>Wed, 05 Aug 2020 16:23:44 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_10/</guid>
-      <description>Artix Linux Security (Should This be put in Posts? Y.O.L.O. why not Both?) I&amp;rsquo;m on tiling! No buttons for me!! So yeah, I basically completely switched to using cli everything, and so for networking I am using NetworkManager, it&amp;rsquo;s been weird having to get used to it&amp;hellip; It&amp;rsquo;s like it&amp;rsquo;s too easy for me&amp;hellip; that I can&amp;rsquo;t figure it out? Like it makes sense, but&amp;hellip; I can&amp;rsquo;t use my intuiting? Anyways, I still can&amp;rsquo;t figure out how to use it with openvpn, and I don&amp;rsquo;t know how to use wireguard without a file&amp;hellip; and I don&amp;rsquo;t want to figure out if I have to make the file or what&amp;hellip;.</description>
     </item>
     
   </channel>
