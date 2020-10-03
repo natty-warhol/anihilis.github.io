@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://natty-warhol.github.io/films/09.30.20_november/</loc>
-    <lastmod>2020-09-30T12:05:18-07:00</lastmod>
+    <loc>https://natty-warhol.github.io/films/10.01.20_peemak/</loc>
+    <lastmod>2020-10-01T21:29:33-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://natty-warhol.github.io/</loc>
-    <lastmod>2020-09-30T12:05:18-07:00</lastmod>
+    <lastmod>2020-10-01T21:29:33-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -24,6 +24,11 @@
   
   <url>
     <loc>https://natty-warhol.github.io/films/</loc>
+    <lastmod>2020-10-01T21:29:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/films/09.30.20_november/</loc>
     <lastmod>2020-09-30T12:05:18-07:00</lastmod>
   </url>
   

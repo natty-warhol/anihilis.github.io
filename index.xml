@@ -7,9 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 30 Sep 2020 12:05:18 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 21:29:33 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>09.30</title>
+      <title>10.01 - Pee Mak</title>
+      <link>https://natty-warhol.github.io/films/10.01.20_peemak/</link>
+      <pubDate>Thu, 01 Oct 2020 21:29:33 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/films/10.01.20_peemak/</guid>
+      <description>Pee Mak (2013) Day 2 of the marathon Pee Mak, Directed by Banjong Pisanthanakun, and Written by Chantavit Dhanasevi, and Nontra Kumwong. This is the first Thai movie I&amp;rsquo;ve seen; and I love it!! This is a Comedy/Horror about a couple of guys coming home from war, only to find out one of their wives is actually a ghost! It&amp;rsquo;s a pretty funny take on usually pretty scary hauntings similar to what I&amp;rsquo;ve seen from Ju-on or The Wailing and so on&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>09.30 - November</title>
       <link>https://natty-warhol.github.io/films/09.30.20_november/</link>
       <pubDate>Wed, 30 Sep 2020 12:05:18 -0700</pubDate>
       
@@ -92,18 +101,6 @@ Beginning Notes I believe we can collect installation notes from the https://nat
       <guid>https://natty-warhol.github.io/personal_logs/day_11/</guid>
       <description>Is There a Better One? Is there a better version? Is there Another Version? Are there really infinite realities? Is my old boss really Batman?
 Just a couple of questions.</description>
-    </item>
-    
-    <item>
-      <title>Artix and Runit Install</title>
-      <link>https://natty-warhol.github.io/posts/2020/08/artix-and-runit-install/</link>
-      <pubDate>Tue, 11 Aug 2020 01:02:41 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/posts/2020/08/artix-and-runit-install/</guid>
-      <description>Switching to Artix Personal Walkthrough What&amp;rsquo;s my Mission? I want to improve performance, security, and declutter my system by subverting Systemd. I also intend to encrypt my hard drive, as well as partial encryption of my internet traffic, whilst also using flatpak on large-library projects to avoid any system breakages.
-USB Installation Grab the ISO from ArtixLinux.org, install with:
- sudo dd bs=4M if=path/to/image-runit.iso of=/dev/sdx status=progress oflag=sync
- Installation &amp;ndash; Prepare When booting into a UEFI Laptop (any laptop made in the past 8 years just about), make sure it is in UEFI mode, despite how you might feel, it is a form of check, and good for software security.</description>
     </item>
     
   </channel>
