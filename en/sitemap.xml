@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://natty-warhol.github.io/films/10.01.20_peemak/</loc>
-    <lastmod>2020-10-01T21:29:33-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://natty-warhol.github.io/</loc>
-    <lastmod>2020-10-01T21:29:33-07:00</lastmod>
+    <lastmod>2020-10-08T08:01:24-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -23,7 +18,27 @@
   </url>
   
   <url>
+    <loc>https://natty-warhol.github.io/personal_logs/day_18/</loc>
+    <lastmod>2020-10-08T08:01:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/personal_logs/</loc>
+    <lastmod>2020-10-08T08:01:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/films/10.02.20_1408/</loc>
+    <lastmod>2020-10-03T07:26:33-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://natty-warhol.github.io/films/</loc>
+    <lastmod>2020-10-03T07:26:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/films/10.01.20_peemak/</loc>
     <lastmod>2020-10-01T21:29:33-07:00</lastmod>
   </url>
   
@@ -34,11 +49,6 @@
   
   <url>
     <loc>https://natty-warhol.github.io/personal_logs/day_17/</loc>
-    <lastmod>2020-09-28T15:34:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://natty-warhol.github.io/personal_logs/</loc>
     <lastmod>2020-09-28T15:34:27-07:00</lastmod>
   </url>
   

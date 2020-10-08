@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 28 Sep 2020 15:34:27 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Oct 2020 08:01:24 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_18</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_18/</link>
+      <pubDate>Thu, 08 Oct 2020 08:01:24 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_18/</guid>
+      <description>I did it I installed OpenBSD onto my main computer, so far so good! The hardest part for me was setting up my touchpad (I like to turn it off and only use the trackpoint). I&amp;rsquo;ve still got a lot to do before I can call it production ready, but I&amp;rsquo;m really loving it! I don&amp;rsquo;t know why I got cold feet about it, this is the most fun I&amp;rsquo;ve had in a while!</description>
+    </item>
+    
     <item>
       <title>Day_17</title>
       <link>https://natty-warhol.github.io/personal_logs/day_17/</link>
@@ -93,16 +102,6 @@ Just a couple of questions.</description>
       <description>Switched My OS!! Huzzah! I have done it! I am free from Solus Linux!
 Don&amp;rsquo;t get me wrong, I love the damned Operating System, I just started feeling claustrophobic with the systemd and the perfect UX and clean UI&amp;hellip; it was just&amp;hellip;. too perfect&amp;hellip;
 So what did I switch to? I did a base install of Artix Linux! I love it so far! I went with the runit instance, because it seemed to have the best server/desktop useability.</description>
-    </item>
-    
-    <item>
-      <title>Day_07</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_07/</link>
-      <pubDate>Tue, 28 Jul 2020 08:38:19 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_07/</guid>
-      <description>Am I Fat? I hate being told what to do with my health, I&amp;rsquo;ve been living with eating disorder all my life, and I like to think that I have gotten a grasp of things, have a logic, and a method. Which makes it all the more upsetting with someone comes around and decides they have to authority to tell me what to do with my body.
-I don&amp;rsquo;t care what you think!</description>
     </item>
     
   </channel>

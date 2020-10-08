@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 01 Oct 2020 21:29:33 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Oct 2020 08:01:24 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_18</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_18/</link>
+      <pubDate>Thu, 08 Oct 2020 08:01:24 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_18/</guid>
+      <description>I did it I installed OpenBSD onto my main computer, so far so good! The hardest part for me was setting up my touchpad (I like to turn it off and only use the trackpoint). I&amp;rsquo;ve still got a lot to do before I can call it production ready, but I&amp;rsquo;m really loving it! I don&amp;rsquo;t know why I got cold feet about it, this is the most fun I&amp;rsquo;ve had in a while!</description>
+    </item>
+    
+    <item>
+      <title>10.02</title>
+      <link>https://natty-warhol.github.io/films/10.02.20_1408/</link>
+      <pubDate>Sat, 03 Oct 2020 07:26:33 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/films/10.02.20_1408/</guid>
+      <description>1408 (2007) 1408 is a much more well known film, about an author who has essentially given up on his life and succumbed to gluttony by only writing books about &amp;lsquo;haunted&amp;rsquo; places and living solo (It&amp;rsquo;s later explained that he left his wife after the death of their daughter). In the shit of his turmoil, he comes across a new lead for a potential &amp;lsquo;scare spot&amp;rsquo; that just so happens to be in New York, where is wife lives.</description>
+    </item>
+    
     <item>
       <title>10.01 - Pee Mak</title>
       <link>https://natty-warhol.github.io/films/10.01.20_peemak/</link>
@@ -82,25 +100,6 @@ Beginning Notes I believe we can collect installation notes from the https://nat
       
       <guid>https://natty-warhol.github.io/personal_logs/day_13/</guid>
       <description>Getting Away Sitting here on day 1 Million or so of our COVID trials, I watch Calvary, a film from 2014 with an all star cast of european actors (I don&amp;rsquo;t dare assume where they&amp;rsquo;re all from, I&amp;rsquo;m American and stupid). The film is about a Priest who is forced into a situation where a man angry at the Catholic church decides to kill a good priest for attention because of all the evils the bad priests have done.</description>
-    </item>
-    
-    <item>
-      <title>Day_12</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_12/</link>
-      <pubDate>Thu, 27 Aug 2020 11:51:35 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_12/</guid>
-      <description>P.O.S. Point of Sale System I am working on a Proof of Concept POS System for my work, because I am tired of the constant problems presenting themselves when I least want them to. I am looking to switch to a completely disconnected, open source solution for work with multiple systems across two states and 5 stores. They are currently using very outdated (almost XP era) PCs with windows 10 locked down, with a shit POS system, and a terrible set up of permissions for apps and users.</description>
-    </item>
-    
-    <item>
-      <title>Day_11</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_11/</link>
-      <pubDate>Thu, 20 Aug 2020 09:28:11 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_11/</guid>
-      <description>Is There a Better One? Is there a better version? Is there Another Version? Are there really infinite realities? Is my old boss really Batman?
-Just a couple of questions.</description>
     </item>
     
   </channel>
