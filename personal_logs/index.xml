@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 08 Oct 2020 08:01:24 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Nov 2020 15:48:24 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_19</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_19/</link>
+      <pubDate>Mon, 30 Nov 2020 15:48:24 -0800</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_19/</guid>
+      <description>OpenBSD still eludes me, and i have no idea what to do about it. It&amp;rsquo;s no longer installed on my computer, as I suddenly had things I had to do that work time-sensitive. I want to reinstall it, and I refuse to dual boot anything ever.
+The lack of virtualization is also quite odd, and I don&amp;rsquo;t know how I&amp;rsquo;m going to get past that, cause god-damn is that a sexy OS or what (like, I would love to use it for my server-side work too)?</description>
+    </item>
+    
     <item>
       <title>Day_18</title>
       <link>https://natty-warhol.github.io/personal_logs/day_18/</link>
@@ -91,17 +101,6 @@ Just a couple of questions.</description>
       
       <guid>https://natty-warhol.github.io/personal_logs/day_10/</guid>
       <description>Artix Linux Security (Should This be put in Posts? Y.O.L.O. why not Both?) I&amp;rsquo;m on tiling! No buttons for me!! So yeah, I basically completely switched to using cli everything, and so for networking I am using NetworkManager, it&amp;rsquo;s been weird having to get used to it&amp;hellip; It&amp;rsquo;s like it&amp;rsquo;s too easy for me&amp;hellip; that I can&amp;rsquo;t figure it out? Like it makes sense, but&amp;hellip; I can&amp;rsquo;t use my intuiting? Anyways, I still can&amp;rsquo;t figure out how to use it with openvpn, and I don&amp;rsquo;t know how to use wireguard without a file&amp;hellip; and I don&amp;rsquo;t want to figure out if I have to make the file or what&amp;hellip;.</description>
-    </item>
-    
-    <item>
-      <title>Day_09</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_09/</link>
-      <pubDate>Tue, 04 Aug 2020 13:24:15 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_09/</guid>
-      <description>Switched My OS!! Huzzah! I have done it! I am free from Solus Linux!
-Don&amp;rsquo;t get me wrong, I love the damned Operating System, I just started feeling claustrophobic with the systemd and the perfect UX and clean UI&amp;hellip; it was just&amp;hellip;. too perfect&amp;hellip;
-So what did I switch to? I did a base install of Artix Linux! I love it so far! I went with the runit instance, because it seemed to have the best server/desktop useability.</description>
     </item>
     
   </channel>

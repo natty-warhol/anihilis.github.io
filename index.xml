@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 08 Oct 2020 08:01:24 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Nov 2020 15:48:24 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_19</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_19/</link>
+      <pubDate>Mon, 30 Nov 2020 15:48:24 -0800</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_19/</guid>
+      <description>OpenBSD still eludes me, and i have no idea what to do about it. It&amp;rsquo;s no longer installed on my computer, as I suddenly had things I had to do that work time-sensitive. I want to reinstall it, and I refuse to dual boot anything ever.
+The lack of virtualization is also quite odd, and I don&amp;rsquo;t know how I&amp;rsquo;m going to get past that, cause god-damn is that a sexy OS or what (like, I would love to use it for my server-side work too)?</description>
+    </item>
+    
     <item>
       <title>Day_18</title>
       <link>https://natty-warhol.github.io/personal_logs/day_18/</link>
@@ -91,15 +101,6 @@ The only thing holding me back is the fear of software stability for my photo an
       <guid>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-notes/</guid>
       <description>Plex Server Setup A Walkthrough I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.
 Beginning Notes I believe we can collect installation notes from the https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/. I prefer to avoid encryption so I can restart the computer remotely.</description>
-    </item>
-    
-    <item>
-      <title>Day_13</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_13/</link>
-      <pubDate>Thu, 03 Sep 2020 07:07:42 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_13/</guid>
-      <description>Getting Away Sitting here on day 1 Million or so of our COVID trials, I watch Calvary, a film from 2014 with an all star cast of european actors (I don&amp;rsquo;t dare assume where they&amp;rsquo;re all from, I&amp;rsquo;m American and stupid). The film is about a Priest who is forced into a situation where a man angry at the Catholic church decides to kill a good priest for attention because of all the evils the bad priests have done.</description>
     </item>
     
   </channel>
