@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="anihilis ">
+<meta name="description" content="Plex Server Updated [Stable Edition] In my Many Journeys I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&amp;rsquo;m going to focus on using Linux in the most organized way possible." />
+<meta name="keywords" content=", untagged" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://natty-warhol.github.io/posts/2020/12/plex-server-update/" />
+
+
+    <title>
+        
+            Plex Server Update :: anihilis ddns 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://natty-warhol.github.io/main.d1ea4af8fd04fb24a4f8b882ea54bd04eb245427ca4baf527c81a5dab071410b.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://natty-warhol.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://natty-warhol.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://natty-warhol.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://natty-warhol.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://natty-warhol.github.io/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://natty-warhol.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Plex Server Update">
+<meta itemprop="description" content="Plex Server Updated [Stable Edition] In my Many Journeys I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&rsquo;m going to focus on using Linux in the most organized way possible.">
+<meta itemprop="datePublished" content="2020-12-03T07:04:45-08:00" />
+<meta itemprop="dateModified" content="2020-12-03T07:04:45-08:00" />
+<meta itemprop="wordCount" content="1082">
+<meta itemprop="image" content="https://natty-warhol.github.io"/>
+
+
+
+<meta itemprop="keywords" content="untagged," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://natty-warhol.github.io"/>
+
+<meta name="twitter:title" content="Plex Server Update"/>
+<meta name="twitter:description" content="Plex Server Updated [Stable Edition] In my Many Journeys I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&rsquo;m going to focus on using Linux in the most organized way possible."/>
+
+
+
+    <meta property="og:title" content="Plex Server Update" />
+<meta property="og:description" content="Plex Server Updated [Stable Edition] In my Many Journeys I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&rsquo;m going to focus on using Linux in the most organized way possible." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://natty-warhol.github.io/posts/2020/12/plex-server-update/" />
+<meta property="og:image" content="https://natty-warhol.github.io"/>
+<meta property="article:published_time" content="2020-12-03T07:04:45-08:00" />
+<meta property="article:modified_time" content="2020-12-03T07:04:45-08:00" />
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-12-03 07:04:45 -0800 PST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://natty-warhol.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://natty-warhol.github.io/about/">About</a></li><li><a href="https://natty-warhol.github.io/films/">Films</a></li><li><a href="https://natty-warhol.github.io/personal_logs/">Personal Logs</a></li><li><a href="https://natty-warhol.github.io/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        6 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://natty-warhol.github.io/posts/2020/12/plex-server-update/">Plex Server Update</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <h1 id="plex-server-updated-stable-edition">Plex Server Updated [Stable Edition]</h1>
+<h2 id="in-my-many-journeys">In my Many Journeys</h2>
+<p>I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&rsquo;m going to focus on using Linux in the most organized way possible.</p>
+<h2 id="a-quick-explanation">A quick explanation:</h2>
+<p>If you&rsquo;re a regular user of linux and partake in the social media and the peoples involved with the Linux community, you probably have heard about people wanted the smallest installs with the least amount of packages and so forth and so forth. I have a similar neuroticism, but mine is simply that of organization.<br>
+I feel that linux has a habit of cluttering itself over time. I prefer to know what is on my system, and I don&rsquo;t want random cruft building up over time, be it old packages (like in Arch how it holds onto previous versions of packages), or a loss of understanding the resources set up (human knowledge error). Linux honestly has too many options, not like GNU options (one package/piece of code for action), but just on the system already. I want a system where I can do everything with single commands. In Linux these days, there&rsquo;s kernel supported legacy items, as well as the all encompassing, always install SystemD. For instance, cron jobs were a thing that people used to do (and a lot still do), but SystemD, which is installed on all major distributions, also have a timer system.<br>
+I have remedied this mostly with my current laptop setup (because I would murder someone if I had to live knowing all that extra garbage was on my system) by simply using only SystemD for all my needs, from mounting, to timers, to user management. I hate it, but it&rsquo;s better that just using it to boot and other stuff for other things, while I have all this unused code on my kernel and in my system.<br>
+With the BSDs of the world, they are very small, the kernel only including things you absolutely need, and the software count is limited to ports from linux and anything the devs feel is absolutely important. It&rsquo;s also nice how everything is cohesive and in order, from the locations of the binaries to the settings, and GODDAMN do I love how there&rsquo;s never more than two solutions to one problem. I STG I&rsquo;m tired of having so many ways to fix one problem on my system, and knowing that I can go around and accidently do one of those other things not knowing I&rsquo;m screwing with another part of my system!<br>
+Anyways, I&rsquo;m done ranting now, I got a little keyboard rage there&hellip;.</p>
+<h2 id="beginning-notes">Beginning Notes</h2>
+<p>I no longer will include the link to my dotfiles here, because I now simply use it as a launching off point (also as explained before I plan to ditch linux ASAP). I still prefer to avoid encryption due to obvious reasons (needing to be there to reboot the machine).</p>
+<p>I currently have quite the set up of hard-drives. I currently do not have a RAID or any other kind of redundancy. I only carry media and personal files on them, nothing super mission critical (y&rsquo;know, besides to my boredom levels). Currently, this is what it looks like, no judgements:</p>
+<blockquote>
+<p>/dev/sda -&gt; /home/USER/Pictures (1Tb)<br>
+/dev/sdb -&gt; System</p>
+<blockquote>
+<p>/dev/sdb1 -&gt; /boot/efi (300M)<br>
+/dev/sdb2 -&gt; / (???)<br>
+/dev/sdb3 -&gt; SWAP (double RAM)<br>
+/dev/sdc -&gt; /home/USER/Videos/Movies (5Tb)<br>
+/dev/sdd -&gt; /home/USER/Music (2Tb)<br>
+/dev/sde -&gt; /home/USER/Videos/TV (5Tb)<br>
+/dev/sdh -&gt; /home/USER/Videos/;) (150Gb)</p>
+</blockquote>
+</blockquote>
+<h2 id="user-accounts">User Accounts</h2>
+<p>This time around I was lacking in inspiration and took to the internet. Decided to name things after Lovecraftian places and creatures.. Which kinda fits my solar theme with my mobile devices.<br>
+Also this time around, I decided to scrap the multiple users with the Docker BS (I grew tired of Docker, with Plex, you give up a lot of accessibility features). Instead I went ahead with creating one user with root priv. and another user without. I&rsquo;m SSHing into the non-rootable user, and then using the <code>su</code> command.<br>
+I&rsquo;m doing this to deal with the confusion, I also ended up having trials and errors with ownership privileges, and transferring files between accounts was a nightmare.<br>
+The rootable account has all the services in it&rsquo;s name, and I can only perform maintenance remotely (unless remoting in with teamviewer).</p>
+<h2 id="internet-access-and-security">Internet Access and Security</h2>
+<p>This time around, I went the easy way with Debian and XFCE as a desktop right out the box. I&rsquo;m using the standard gui NetworkManager connected to Ethernet (with a simultaneous WiFi for the VM we&rsquo;ll talk about later). I have it set up to access the Quad9 DNS only (no more 1.1.1.1).<br>
+For the firewall I&rsquo;m still using the trusty UFW (fuck iptables, and thank god for simplicity of use). I stick with the default of deny, and a limit on 64 (my SSH port of choice).</p>
+<pre><code>To                         Action      From
+---
+syncthing                  ALLOW       Anywhere                  
+64/tcp                     LIMIT       Anywhere                  
+6985/tcp                   ALLOW       Anywhere                  
+6985/udp                   ALLOW       Anywhere                  
+plexmediaserver            ALLOW       Anywhere                  
+6890:6999/tcp              ALLOW       Anywhere                  
+6890:6999/udp              ALLOW       Anywhere                  
+Samba                      ALLOW       Anywhere                  
+syncthing (v6)             ALLOW       Anywhere (v6)             
+64/tcp (v6)                LIMIT       Anywhere (v6)             
+6985/tcp (v6)              ALLOW       Anywhere (v6)             
+6985/udp (v6)              ALLOW       Anywhere (v6)             
+plexmediaserver (v6)       ALLOW       Anywhere (v6)             
+6890:6999/tcp (v6)         ALLOW       Anywhere (v6)             
+6890:6999/udp (v6)         ALLOW       Anywhere (v6)             
+Samba (v6)                 ALLOW       Anywhere (v6)  
+</code></pre><h2 id="plex-installation">Plex Installation</h2>
+<p>Luckily, Debian has a PPA for direct Plex updates! just go to the website, install the deb file they provide, and then the mirror comes with it. Wamo-bamo.</p>
+<h2 id="virtual-machine-for-media-collection">Virtual Machine for Media Collection</h2>
+<p>In order to offload all the work I do for the server on my laptop I decided to turn my server into two computers instead of just getting a cheap other one. I&rsquo;m using Virtualbox (My server is a Galago Pro, it can&rsquo;t even VM right, I&rsquo;m not gonna waste my time with QEMU for that. I&rsquo;ve set the network up to bridged, and have my private VPN service that I connect to from the VM, and then can SSH into it from my laptop or the other server to use any of the services I choose to for collection.<br>
+Generally speaking, I will prefer to use Arch or something derivative for this, just because updates are good for security, especially if you&rsquo;re gonna be doing a lot of downloading other&rsquo;s materials.</p>
+<h2 id="le-fin-for-now">Le Fin&hellip; For Now&hellip;.</h2>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon">
+            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+            <line x1="7" y1="7" x2="7" y2="7"></line>
+          </svg><span class="tag"><a href="https://natty-warhol.github.io/tags/untagged/">untagged</a></span>
+        </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1082 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        2020-12-03 07:04 -0800
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://natty-warhol.github.io/posts/2020/09/plex-server-setup-redacted/">
+                <span class="button__text">Plex Server Setup --Redacted</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://natty-warhol.github.io">anihilis</a></span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            <span> <a href="https://natty-warhol.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://natty-warhol.github.io/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

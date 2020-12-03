@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 30 Nov 2020 15:48:24 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Dec 2020 07:04:45 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plex Server Update</title>
+      <link>https://natty-warhol.github.io/posts/2020/12/plex-server-update/</link>
+      <pubDate>Thu, 03 Dec 2020 07:04:45 -0800</pubDate>
+      
+      <guid>https://natty-warhol.github.io/posts/2020/12/plex-server-update/</guid>
+      <description>Plex Server Updated [Stable Edition] In my Many Journeys I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&amp;rsquo;m going to focus on using Linux in the most organized way possible.</description>
+    </item>
+    
     <item>
       <title>Day_19</title>
       <link>https://natty-warhol.github.io/personal_logs/day_19/</link>
@@ -95,15 +104,6 @@ I&amp;rsquo;ve been watching this film since I was a wee child, and every time I
       
       <guid>https://natty-warhol.github.io/films/10.02.20_1408/</guid>
       <description>1408 (2007) 1408 is a much more well known film, about an author who has essentially given up on his life and succumbed to gluttony by only writing books about &amp;lsquo;haunted&amp;rsquo; places and living solo (It&amp;rsquo;s later explained that he left his wife after the death of their daughter). In the shit of his turmoil, he comes across a new lead for a potential &amp;lsquo;scare spot&amp;rsquo; that just so happens to be in New York, where is wife lives.</description>
-    </item>
-    
-    <item>
-      <title>10.01 - Pee Mak</title>
-      <link>https://natty-warhol.github.io/films/10.01.20_peemak/</link>
-      <pubDate>Thu, 01 Oct 2020 21:29:33 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/films/10.01.20_peemak/</guid>
-      <description>Pee Mak (2013) Day 2 of the marathon Pee Mak, Directed by Banjong Pisanthanakun, and Written by Chantavit Dhanasevi, and Nontra Kumwong. This is the first Thai movie I&amp;rsquo;ve seen; and I love it!! This is a Comedy/Horror about a couple of guys coming home from war, only to find out one of their wives is actually a ghost! It&amp;rsquo;s a pretty funny take on usually pretty scary hauntings similar to what I&amp;rsquo;ve seen from Ju-on or The Wailing and so on&amp;hellip;</description>
     </item>
     
   </channel>

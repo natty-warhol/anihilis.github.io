@@ -6,15 +6,82 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 03 Sep 2020 12:00:45 -0700</lastBuildDate>
+        <lastBuildDate>Thu, 03 Dec 2020 07:04:45 -0800</lastBuildDate>
         <atom:link href="https://natty-warhol.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Plex Server Setup-notes</title>
-            <link>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-notes/</link>
+            <title>Plex Server Update</title>
+            <link>https://natty-warhol.github.io/posts/2020/12/plex-server-update/</link>
+            <pubDate>Thu, 03 Dec 2020 07:04:45 -0800</pubDate>
+            
+            <guid>https://natty-warhol.github.io/posts/2020/12/plex-server-update/</guid>
+            <description>Plex Server Updated [Stable Edition] In my Many Journeys I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&amp;rsquo;m going to focus on using Linux in the most organized way possible.</description>
+            <content type="html"><![CDATA[<h1 id="plex-server-updated-stable-edition">Plex Server Updated [Stable Edition]</h1>
+<h2 id="in-my-many-journeys">In my Many Journeys</h2>
+<p>I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&rsquo;m going to focus on using Linux in the most organized way possible.</p>
+<h2 id="a-quick-explanation">A quick explanation:</h2>
+<p>If you&rsquo;re a regular user of linux and partake in the social media and the peoples involved with the Linux community, you probably have heard about people wanted the smallest installs with the least amount of packages and so forth and so forth. I have a similar neuroticism, but mine is simply that of organization.<br>
+I feel that linux has a habit of cluttering itself over time. I prefer to know what is on my system, and I don&rsquo;t want random cruft building up over time, be it old packages (like in Arch how it holds onto previous versions of packages), or a loss of understanding the resources set up (human knowledge error). Linux honestly has too many options, not like GNU options (one package/piece of code for action), but just on the system already. I want a system where I can do everything with single commands. In Linux these days, there&rsquo;s kernel supported legacy items, as well as the all encompassing, always install SystemD. For instance, cron jobs were a thing that people used to do (and a lot still do), but SystemD, which is installed on all major distributions, also have a timer system.<br>
+I have remedied this mostly with my current laptop setup (because I would murder someone if I had to live knowing all that extra garbage was on my system) by simply using only SystemD for all my needs, from mounting, to timers, to user management. I hate it, but it&rsquo;s better that just using it to boot and other stuff for other things, while I have all this unused code on my kernel and in my system.<br>
+With the BSDs of the world, they are very small, the kernel only including things you absolutely need, and the software count is limited to ports from linux and anything the devs feel is absolutely important. It&rsquo;s also nice how everything is cohesive and in order, from the locations of the binaries to the settings, and GODDAMN do I love how there&rsquo;s never more than two solutions to one problem. I STG I&rsquo;m tired of having so many ways to fix one problem on my system, and knowing that I can go around and accidently do one of those other things not knowing I&rsquo;m screwing with another part of my system!<br>
+Anyways, I&rsquo;m done ranting now, I got a little keyboard rage there&hellip;.</p>
+<h2 id="beginning-notes">Beginning Notes</h2>
+<p>I no longer will include the link to my dotfiles here, because I now simply use it as a launching off point (also as explained before I plan to ditch linux ASAP). I still prefer to avoid encryption due to obvious reasons (needing to be there to reboot the machine).</p>
+<p>I currently have quite the set up of hard-drives. I currently do not have a RAID or any other kind of redundancy. I only carry media and personal files on them, nothing super mission critical (y&rsquo;know, besides to my boredom levels). Currently, this is what it looks like, no judgements:</p>
+<blockquote>
+<p>/dev/sda -&gt; /home/USER/Pictures (1Tb)<br>
+/dev/sdb -&gt; System</p>
+<blockquote>
+<p>/dev/sdb1 -&gt; /boot/efi (300M)<br>
+/dev/sdb2 -&gt; / (???)<br>
+/dev/sdb3 -&gt; SWAP (double RAM)<br>
+/dev/sdc -&gt; /home/USER/Videos/Movies (5Tb)<br>
+/dev/sdd -&gt; /home/USER/Music (2Tb)<br>
+/dev/sde -&gt; /home/USER/Videos/TV (5Tb)<br>
+/dev/sdh -&gt; /home/USER/Videos/;) (150Gb)</p>
+</blockquote>
+</blockquote>
+<h2 id="user-accounts">User Accounts</h2>
+<p>This time around I was lacking in inspiration and took to the internet. Decided to name things after Lovecraftian places and creatures.. Which kinda fits my solar theme with my mobile devices.<br>
+Also this time around, I decided to scrap the multiple users with the Docker BS (I grew tired of Docker, with Plex, you give up a lot of accessibility features). Instead I went ahead with creating one user with root priv. and another user without. I&rsquo;m SSHing into the non-rootable user, and then using the <code>su</code> command.<br>
+I&rsquo;m doing this to deal with the confusion, I also ended up having trials and errors with ownership privileges, and transferring files between accounts was a nightmare.<br>
+The rootable account has all the services in it&rsquo;s name, and I can only perform maintenance remotely (unless remoting in with teamviewer).</p>
+<h2 id="internet-access-and-security">Internet Access and Security</h2>
+<p>This time around, I went the easy way with Debian and XFCE as a desktop right out the box. I&rsquo;m using the standard gui NetworkManager connected to Ethernet (with a simultaneous WiFi for the VM we&rsquo;ll talk about later). I have it set up to access the Quad9 DNS only (no more 1.1.1.1).<br>
+For the firewall I&rsquo;m still using the trusty UFW (fuck iptables, and thank god for simplicity of use). I stick with the default of deny, and a limit on 64 (my SSH port of choice).</p>
+<pre><code>To                         Action      From
+---
+syncthing                  ALLOW       Anywhere                  
+64/tcp                     LIMIT       Anywhere                  
+6985/tcp                   ALLOW       Anywhere                  
+6985/udp                   ALLOW       Anywhere                  
+plexmediaserver            ALLOW       Anywhere                  
+6890:6999/tcp              ALLOW       Anywhere                  
+6890:6999/udp              ALLOW       Anywhere                  
+Samba                      ALLOW       Anywhere                  
+syncthing (v6)             ALLOW       Anywhere (v6)             
+64/tcp (v6)                LIMIT       Anywhere (v6)             
+6985/tcp (v6)              ALLOW       Anywhere (v6)             
+6985/udp (v6)              ALLOW       Anywhere (v6)             
+plexmediaserver (v6)       ALLOW       Anywhere (v6)             
+6890:6999/tcp (v6)         ALLOW       Anywhere (v6)             
+6890:6999/udp (v6)         ALLOW       Anywhere (v6)             
+Samba (v6)                 ALLOW       Anywhere (v6)  
+</code></pre><h2 id="plex-installation">Plex Installation</h2>
+<p>Luckily, Debian has a PPA for direct Plex updates! just go to the website, install the deb file they provide, and then the mirror comes with it. Wamo-bamo.</p>
+<h2 id="virtual-machine-for-media-collection">Virtual Machine for Media Collection</h2>
+<p>In order to offload all the work I do for the server on my laptop I decided to turn my server into two computers instead of just getting a cheap other one. I&rsquo;m using Virtualbox (My server is a Galago Pro, it can&rsquo;t even VM right, I&rsquo;m not gonna waste my time with QEMU for that. I&rsquo;ve set the network up to bridged, and have my private VPN service that I connect to from the VM, and then can SSH into it from my laptop or the other server to use any of the services I choose to for collection.<br>
+Generally speaking, I will prefer to use Arch or something derivative for this, just because updates are good for security, especially if you&rsquo;re gonna be doing a lot of downloading other&rsquo;s materials.</p>
+<h2 id="le-fin-for-now">Le Fin&hellip; For Now&hellip;.</h2>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Plex Server Setup --Redacted</title>
+            <link>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-redacted/</link>
             <pubDate>Thu, 03 Sep 2020 12:00:45 -0700</pubDate>
             
-            <guid>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-notes/</guid>
+            <guid>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-redacted/</guid>
             <description>Plex Server Setup A Walkthrough I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.
 Beginning Notes I believe we can collect installation notes from the https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/. I prefer to avoid encryption so I can restart the computer remotely.</description>
             <content type="html"><![CDATA[<h1 id="plex-server-setup">Plex Server Setup</h1>
