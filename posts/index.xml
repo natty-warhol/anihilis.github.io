@@ -34,12 +34,12 @@ Anyways, I&rsquo;m done ranting now, I got a little keyboard rage there&hellip;.
 <blockquote>
 <p>/dev/sdb1 -&gt; /boot/efi (300M)<br>
 /dev/sdb2 -&gt; / (???)<br>
-/dev/sdb3 -&gt; SWAP (double RAM)<br>
-/dev/sdc -&gt; /home/USER/Videos/Movies (5Tb)<br>
+/dev/sdb3 -&gt; SWAP (double RAM)</p>
+</blockquote>
+<p>/dev/sdc -&gt; /home/USER/Videos/Movies (5Tb)<br>
 /dev/sdd -&gt; /home/USER/Music (2Tb)<br>
 /dev/sde -&gt; /home/USER/Videos/TV (5Tb)<br>
 /dev/sdh -&gt; /home/USER/Videos/;) (150Gb)</p>
-</blockquote>
 </blockquote>
 <h2 id="user-accounts">User Accounts</h2>
 <p>This time around I was lacking in inspiration and took to the internet. Decided to name things after Lovecraftian places and creatures.. Which kinda fits my solar theme with my mobile devices.<br>
