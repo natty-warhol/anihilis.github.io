@@ -18,23 +18,14 @@
     </item>
     
     <item>
-      <title>Plex Server Setup --Redacted</title>
-      <link>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-redacted/</link>
+      <title>Plex Server Setup //Redacted//</title>
+      <link>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-/redacted/</link>
       <pubDate>Thu, 03 Sep 2020 12:00:45 -0700</pubDate>
       
-      <guid>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-redacted/</guid>
-      <description>Plex Server Setup A Walkthrough I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.
-Beginning Notes I believe we can collect installation notes from the https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/. I prefer to avoid encryption so I can restart the computer remotely.</description>
-    </item>
-    
-    <item>
-      <title>Internet Security - A Work in Progress</title>
-      <link>https://natty-warhol.github.io/posts/2020/07/internet-security-a-work-in-progress/</link>
-      <pubDate>Thu, 23 Jul 2020 05:07:07 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/posts/2020/07/internet-security-a-work-in-progress/</guid>
-      <description>Hiding From the Internet &amp;ndash; Making a Plan * Information largely *taken* from the EFF1
- What do you want to hide? Who do I want to protect it from? How bad are the consequences if I fail? How Likely is it That I will Need to Protect it? How Much Trouble am I Willing to go Through to try to Prevent Potential Consequences? Security Planning as a Regular Practice  What do you Want to Hide?</description>
+      <guid>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-/redacted/</guid>
+      <description>A Walkthrough I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.
+Beginning Notes I believe we can collect installation notes from the https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/. I prefer to avoid encryption so I can restart the computer remotely.
+Mapping looks something like this:</description>
     </item>
     
   </channel>

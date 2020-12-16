@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://natty-warhol.github.io/recipes/</loc>
+    <lastmod>2020-12-15T19:50:14-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://natty-warhol.github.io/</loc>
     <lastmod>2020-12-03T07:04:45-08:00</lastmod>
     <xhtml:link
@@ -58,12 +63,17 @@
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/films/10.11.20_possum/</loc>
-    <lastmod>2020-10-19T17:05:52-07:00</lastmod>
+    <loc>https://natty-warhol.github.io/films/10.12.20_thevoid/</loc>
+    <lastmod>2020-10-19T17:06:25-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://natty-warhol.github.io/films/</loc>
+    <lastmod>2020-10-19T17:06:25-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/films/10.11.20_possum/</loc>
     <lastmod>2020-10-19T17:05:52-07:00</lastmod>
   </url>
   
@@ -143,7 +153,7 @@
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-redacted/</loc>
+    <loc>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-/redacted/</loc>
     <lastmod>2020-09-03T12:00:45-07:00</lastmod>
   </url>
   
@@ -218,33 +228,48 @@
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/posts/2020/07/internet-security-a-work-in-progress/</loc>
+    <loc>https://natty-warhol.github.io/tags/blocking/</loc>
     <lastmod>2020-07-23T05:07:07-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/tags/contact/</loc>
-    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+    <loc>https://natty-warhol.github.io/tags/hosts/</loc>
+    <lastmod>2020-07-23T05:07:07-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/tags/introduction/</loc>
-    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+    <loc>https://natty-warhol.github.io/tags/internet/</loc>
+    <lastmod>2020-07-23T05:07:07-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/posts/2020/07/welcome/</loc>
-    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+    <loc>https://natty-warhol.github.io/posts/2020/07/internet-security-active-article/</loc>
+    <lastmod>2020-07-23T05:07:07-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/tags/welcome/</loc>
-    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+    <loc>https://natty-warhol.github.io/tags/network/</loc>
+    <lastmod>2020-07-23T05:07:07-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://natty-warhol.github.io/tags/what-to-expect/</loc>
-    <lastmod>2020-07-23T04:10:45-07:00</lastmod>
+    <loc>https://natty-warhol.github.io/tags/planning/</loc>
+    <lastmod>2020-07-23T05:07:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/tags/security/</loc>
+    <lastmod>2020-07-23T05:07:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/tags/surveilance/</loc>
+    <lastmod>2020-07-23T05:07:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://natty-warhol.github.io/tags/tor/</loc>
+    <lastmod>2020-07-23T05:07:07-07:00</lastmod>
   </url>
   
   <url>

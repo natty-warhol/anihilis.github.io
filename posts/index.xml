@@ -26,7 +26,7 @@ I have remedied this mostly with my current laptop setup (because I would murder
 With the BSDs of the world, they are very small, the kernel only including things you absolutely need, and the software count is limited to ports from linux and anything the devs feel is absolutely important. It&rsquo;s also nice how everything is cohesive and in order, from the locations of the binaries to the settings, and GODDAMN do I love how there&rsquo;s never more than two solutions to one problem. I STG I&rsquo;m tired of having so many ways to fix one problem on my system, and knowing that I can go around and accidently do one of those other things not knowing I&rsquo;m screwing with another part of my system!<br>
 Anyways, I&rsquo;m done ranting now, I got a little keyboard rage there&hellip;.</p>
 <h2 id="beginning-notes">Beginning Notes</h2>
-<p>I no longer will include the link to my dotfiles here, because I now simply use it as a launching off point (also as explained before I plan to ditch linux ASAP). I still prefer to avoid encryption due to obvious reasons (needing to be there to reboot the machine).</p>
+<p>I now have the world&rsquo;s greatest dotfiles repo, and I will never share it because it has so much personal info as well as application files that I&rsquo;m not sure of the shareability of, that I&rsquo;m not willing to vet to share. However, I&rsquo;m going to link it <a href="https://github.com/natty-warhol/dotfiles-Github">here</a>, for my own convenience. Maybe I&rsquo;ll make a second public neutered git or something later, but this is where we&rsquo;re at.</p>
 <p>I currently have quite the set up of hard-drives. I currently do not have a RAID or any other kind of redundancy. I only carry media and personal files on them, nothing super mission critical (y&rsquo;know, besides to my boredom levels). Currently, this is what it looks like, no judgements:</p>
 <blockquote>
 <p>/dev/sda -&gt; /home/USER/Pictures (1Tb)<br>
@@ -49,8 +49,8 @@ The rootable account has all the services in it&rsquo;s name, and I can only per
 <h2 id="internet-access-and-security">Internet Access and Security</h2>
 <p>This time around, I went the easy way with Debian and XFCE as a desktop right out the box. I&rsquo;m using the standard gui NetworkManager connected to Ethernet (with a simultaneous WiFi for the VM we&rsquo;ll talk about later). I have it set up to access the Quad9 DNS only (no more 1.1.1.1).<br>
 For the firewall I&rsquo;m still using the trusty UFW (fuck iptables, and thank god for simplicity of use). I stick with the default of deny, and a limit on 64 (my SSH port of choice).</p>
-<pre><code>To                         Action      From
----
+<pre><code>To                         Action      From  
+---  
 syncthing                  ALLOW       Anywhere                  
 64/tcp                     LIMIT       Anywhere                  
 6985/tcp                   ALLOW       Anywhere                  
@@ -68,7 +68,7 @@ plexmediaserver (v6)       ALLOW       Anywhere (v6)
 6890:6999/udp (v6)         ALLOW       Anywhere (v6)             
 Samba (v6)                 ALLOW       Anywhere (v6)  
 </code></pre><h2 id="plex-installation">Plex Installation</h2>
-<p>Luckily, Debian has a PPA for direct Plex updates! just go to the website, install the deb file they provide, and then the mirror comes with it. Wamo-bamo.</p>
+<p>Luckily, Debian has a PPA for direct Plex updates! just go to the <a href="https://knapsu.eu/plex/">website</a>, install the deb file they provide, and then the mirror comes with it. Wamo-bamo.</p>
 <h2 id="virtual-machine-for-media-collection">Virtual Machine for Media Collection</h2>
 <p>In order to offload all the work I do for the server on my laptop I decided to turn my server into two computers instead of just getting a cheap other one. I&rsquo;m using Virtualbox (My server is a Galago Pro, it can&rsquo;t even VM right, I&rsquo;m not gonna waste my time with QEMU for that. I&rsquo;ve set the network up to bridged, and have my private VPN service that I connect to from the VM, and then can SSH into it from my laptop or the other server to use any of the services I choose to for collection.<br>
 Generally speaking, I will prefer to use Arch or something derivative for this, just because updates are good for security, especially if you&rsquo;re gonna be doing a lot of downloading other&rsquo;s materials.</p>
@@ -77,15 +77,15 @@ Generally speaking, I will prefer to use Arch or something derivative for this, 
         </item>
         
         <item>
-            <title>Plex Server Setup --Redacted</title>
-            <link>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-redacted/</link>
+            <title>Plex Server Setup //Redacted//</title>
+            <link>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-/redacted/</link>
             <pubDate>Thu, 03 Sep 2020 12:00:45 -0700</pubDate>
             
-            <guid>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-redacted/</guid>
-            <description>Plex Server Setup A Walkthrough I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.
-Beginning Notes I believe we can collect installation notes from the https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/. I prefer to avoid encryption so I can restart the computer remotely.</description>
-            <content type="html"><![CDATA[<h1 id="plex-server-setup">Plex Server Setup</h1>
-<h2 id="a-walkthrough">A Walkthrough</h2>
+            <guid>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-/redacted/</guid>
+            <description>A Walkthrough I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.
+Beginning Notes I believe we can collect installation notes from the https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/. I prefer to avoid encryption so I can restart the computer remotely.
+Mapping looks something like this:</description>
+            <content type="html"><![CDATA[<h2 id="a-walkthrough">A Walkthrough</h2>
 <p>I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.</p>
 <h3 id="beginning-notes">Beginning Notes</h3>
 <p>I believe we can collect installation notes from the <!-- raw HTML omitted --><a href="https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/">https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/</a><!-- raw HTML omitted -->. I prefer to avoid encryption so I can restart the computer remotely.</p>
@@ -295,23 +295,36 @@ docker stop plex
         </item>
         
         <item>
-            <title>Internet Security - A Work in Progress</title>
-            <link>https://natty-warhol.github.io/posts/2020/07/internet-security-a-work-in-progress/</link>
+            <title>Internet Security (Active Article)</title>
+            <link>https://natty-warhol.github.io/posts/2020/07/internet-security-active-article/</link>
             <pubDate>Thu, 23 Jul 2020 05:07:07 -0700</pubDate>
             
-            <guid>https://natty-warhol.github.io/posts/2020/07/internet-security-a-work-in-progress/</guid>
+            <guid>https://natty-warhol.github.io/posts/2020/07/internet-security-active-article/</guid>
             <description>Hiding From the Internet &amp;ndash; Making a Plan * Information largely *taken* from the EFF1
- What do you want to hide? Who do I want to protect it from? How bad are the consequences if I fail? How Likely is it That I will Need to Protect it? How Much Trouble am I Willing to go Through to try to Prevent Potential Consequences? Security Planning as a Regular Practice  What do you Want to Hide?</description>
-            <content type="html"><![CDATA[<h1 id="hiding-from-the-internet----making-a-plan">Hiding From the Internet &ndash; Making a Plan</h1>
+ What do you want to hide? How bad are the consequences if I fail? How Likely is it That I will Need to Protect it? How Much Trouble am I Willing to go Through to try to Prevent Potential Consequences? Security Planning as a Regular Practice How far are you Willing to go? Simple Security Measures  Browser Add-ons Firewalls Encryption in Communication   Moderate Difficulty Actions  GPG - Encrypt on your own!</description>
+            <content type="html"><![CDATA[<h2 id="hiding-from-the-internet----making-a-plan">Hiding From the Internet &ndash; Making a Plan</h2>
 <p><!-- raw HTML omitted -->* Information largely *taken* from the EFF<!-- raw HTML omitted --> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<ol>
+<ul>
 <li><a href="#what-do-you-want-to-hide">What do you want to hide?</a></li>
-<li><a href="#who-do-i-want-to-protect-it-from">Who do I want to protect it from?</a></li>
 <li><a href="#how-bad-are-the-consequences-if-i-fail">How bad are the consequences if I fail?</a></li>
 <li><a href="#how-likely-is-it-that-i-will-need-to-protect-it">How Likely is it That I will Need to Protect it?</a></li>
-<li><a href="#how-much-trouble-am-i-willing-to-go-through-to-try-to-prevent-potential-consequences">How Much Trouble am I Willing to go Through to try to Prevent Potential Consequences?</a></li>
+<li><a href="#how-much-am-i-willing-to-go-through-to-try-to-prevent-potential-consequences">How Much Trouble am I Willing to go Through to try to Prevent Potential Consequences?</a></li>
 <li><a href="#security-planning-as-a-regular-practice">Security Planning as a Regular Practice</a></li>
+<li><a href="#how-far-are-you-willing-to-go">How far are you Willing to go?</a></li>
+<li><a href="#simple-security-measures">Simple Security Measures</a>
+<ol>
+<li><a href="#browser-add-ons">Browser Add-ons</a></li>
+<li><a href="#firewalls">Firewalls</a></li>
+<li><a href="#encryption-in-communication">Encryption in Communication</a></li>
 </ol>
+</li>
+<li><a href="#moderate-difficulty-actions">Moderate Difficulty Actions</a>
+<ol>
+<li><a href="#gpg">GPG - Encrypt on your own!</a></li>
+<li><a href="#vpn-and-network-routing">VPN Services and Network Routing</a></li>
+</ol>
+</li>
+</ul>
 <h3 id="what-do-you-want-to-hide">What do you Want to Hide?</h3>
 <p>An <em><strong>asset</strong></em> is something you value and want to protect. In the context of digital security, an asset is usually some kind of information. for example, your emails, contact lists, instant messages, location (current and past), and all files you come into contact with are all possible assets. Your devices may also be assets.</p>
 <ul>
@@ -345,6 +358,11 @@ For example, an attorney representing a client in a national security case may b
 </ul>
 <h3 id="security-planning-as-a-regular-practice">Security Planning as a Regular Practice</h3>
 <p>Keep in mind your security plan can change as your situation changes. Thus, revisiting your security plan rfrequently is good practice.</p>
+<p> <br>
+ <br>
+ <br>
+ <br>
+ </p>
 <h1 id="how-far-are-you-willing-to-go">How far are you Willing to go?</h1>
 <!-- raw HTML omitted -->
 <ol>
@@ -375,7 +393,7 @@ sudo ufw limit ssh
 sudo ufw enable  
 </code></pre><p>Then all you have to do is check that it&rsquo;s still running!</p>
 <pre><code>sudo ufw status  
-</code></pre><h4 id="encryption-in-communication">Encryption in Communication</h4>
+</code></pre><h4 id="encryption-in-communication">Encryption in Communication </h4>
 <p>When communicating on the internet, it is important to be aware of what channels you are going through, as well as who can see it. A lot of more modern e-mail clients and instant messagers will provide encryption of some sort. This however is never a true guarantee. For instance, Google claims to encrypt all of your emails and chats, but they still have the capability to open up and view those very texts, as well as deliver them to any respective government.</p>
 <p>When speaking to your friends and family it is all good and well to use your email provier&rsquo;s encryption, but don&rsquo;t for any second believe that they won&rsquo;t give it up if it contains incriminating information or <em><strong>tag</strong></em> it for <em><strong>fingerprinting</strong></em>.</p>
 <p><em><strong>fingerprinting</strong></em> is generally a term to define when a website or service tries to identify you through all the information it can gather from your web browser (or other windowed internet-application), being your Location, IP Address, Web Browser, Web Browser Version, Operating system, GPS Signal, any access granted to the microphone or webcam, on, and on&hellip;. (We give our web browsers access to our entire computers these days&hellip;)</p>
@@ -385,7 +403,7 @@ sudo ufw enable
 <p>Don&rsquo;t worry about it too much! Don&rsquo;t want people stealing your conversations? Try finding an e-mail service that YOU pay for, and if you ever have to send sensitive information over the internet, encrypt it yourself!</p>
 <h3 id="moderate-difficulty-actions">Moderate Difficulty Actions</h3>
 <p>Moderate security could be considered the &ldquo;Goldilocks Zone&rdquo; of security, it&rsquo;s not absurdly hard, but it will be decent enough to keep yourself free of local government, ISPs, and peeping toms.</p>
-<h4 id="gpg----encrypt-on-your-own">GPG &ndash; Encrypt on your own!</h4>
+<h4 id="gpg">GPG &ndash; Encrypt on your own!</h4>
 <p>GPG, or Gnu Privacy Guard, is a F.O.S.S program that one can use to essentially password protect their communications, files, or traffic! <em><strong>How do we do it??</strong></em></p>
 <p>On <strong>Windows</strong> you would use a software like <strong>Gpg4win</strong>. This is an app that refers to itself as not a app, but simply an installation package [for other packages]. This is a group of packages put together to help apply encryption to all your communications. On it&rsquo;s website it lists these options as:</p>
 <ul>
@@ -408,7 +426,7 @@ Once the creation is completed, you will then be able to backup, send, or upload
 <p>On <strong>OS X</strong> there is a similar package called the <strong>GPG Suite</strong>, curated by, funnily enough, <strong>GPGTools</strong>. Installation will be close to exactly the same as on Windows, just prettier.</p>
 <p>With <strong>Linux</strong> it&rsquo;s a little bit of a more different experience, but a lot simpler! You simply have to install the <!-- raw HTML omitted -->gnupg<!-- raw HTML omitted --> package, and hopefully it&rsquo;ll give you all the dependencies, if not, try installing <!-- raw HTML omitted -->pinentry<!-- raw HTML omitted -->. After that, you can begin creation! Type in <!-- raw HTML omitted -->$ gpg &ndash;full-gen-key<!-- raw HTML omitted -->, this will prompt you for your name, e-mail, and any comments. With any other questions, the default is plenty fine. Once generation begins, simply click and type around the desktop to help it make the keys! Once it&rsquo;s generated, it is saved to your home directory and accessible to you throughout your system!<br>
 One thing to note with Linux, is that any application that supports GPG requires setting up, though there is plenty of documentation on the internet about how to do it with any service you may please.</p>
-<h4 id="vpn-services-and-network-routing">VPN Services and Network Routing</h4>
+<h4 id="vpn-and-network-routing">VPN Services and Network Routing</h4>
 <p><strong>VPN</strong> or <strong>Virtual Private Network</strong> refers to a secondary router, or server, that you can connect to before hitting your ISP or any other servers or websites on the internet. Getting a VPN service is much more recommended by myself, as it&rsquo;s easier maintenance for you, but also, each service provides instructions on how to set up their connection differently, and a lot of them provide failsafes that OS&rsquo;s don&rsquo;t seem to carry (like turning off the network if the VPN disconnects).</p>
 <p>Another direction to take this in would be with Network Routing, the most common service known as <strong>Tor</strong>. This is an abbreviation for <strong>The Onion Router</strong>. What it does, is it creates a network of interconnected devices, all sharing data and traffic, making it hard for any action or click be traced back to any one person. To use this, it is highly recommend by everyone in the industry to stick with the TOR Browser, an application based off of Firefox made specifically to ensure anonymity (look back to fingerprinting).</p>
 <h3 id="hermit-level-security">Hermit Level Security</h3>
@@ -422,21 +440,6 @@ One thing to note with Linux, is that any application that supports GPG requires
 </li>
 </ol>
 </section>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Welcome</title>
-            <link>https://natty-warhol.github.io/posts/2020/07/welcome/</link>
-            <pubDate>Thu, 23 Jul 2020 04:10:45 -0700</pubDate>
-            
-            <guid>https://natty-warhol.github.io/posts/2020/07/welcome/</guid>
-            <description>Welcome to the First Post Hello all! Have no fear, Tasha is here! On this site, you can expect to find the rantings and ravings of I, a madperson full of cynicism, and a general enjoyment of technology and art.
-Get Involved If you see anything on here that triggers you or makes you have to say something back to me, feel free to contact me @ &amp;hellip;nowhere yet, we&amp;rsquo;ll get back to that.</description>
-            <content type="html"><![CDATA[<h1 id="welcome-to-the-first-post">Welcome to the First Post</h1>
-<p>Hello all! Have no fear, Tasha is here! On this site, you can expect to find the rantings and ravings of I, a madperson full of cynicism, and a general enjoyment of technology and art.</p>
-<h2 id="get-involved">Get Involved</h2>
-<p>If you see anything on here that triggers you or makes you have to say something back to me, feel free to contact me @ &hellip;nowhere yet, we&rsquo;ll get back to that.</p>
 ]]></content>
         </item>
         

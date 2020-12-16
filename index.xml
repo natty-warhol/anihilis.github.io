@@ -9,6 +9,15 @@
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 03 Dec 2020 07:04:45 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Recipes</title>
+      <link>https://natty-warhol.github.io/recipes/</link>
+      <pubDate>Tue, 15 Dec 2020 19:50:14 -0800</pubDate>
+      
+      <guid>https://natty-warhol.github.io/recipes/</guid>
+      <description>Table of Contents:   ⚬ Drinks  Ginger Beer Super Morning Tea Ginger Detox Pumpkin Milk  ⚬ Main Dishes  Mac &amp;lsquo;n Cheese Vegan Chili Roasted Potato Cups w/ Guacamole Cheesy Meatball Bake  ⚬ Sides  Savory Rice  ⚬ Scratch // Basics  Flour Tortillas Easy Pancake Recipe Chia Seed Pudding  ⚬ Desserts  Pumpkin Pie Zucchini Brownies Cookies Peanut Butter Cookies Lefse   Drinks Ginger Beer Ingredients  Water Brown Sugar White Sugar Fresh Ginger, Peeled and Minced Kosher Salt Lemon Juice Active Dry Yeast  Directions In a large saucepan combine 1qt water, ½ cup white and brown sugar (each), with a pinch of salt.</description>
+    </item>
+    
+    <item>
       <title>Plex Server Update</title>
       <link>https://natty-warhol.github.io/posts/2020/12/plex-server-update/</link>
       <pubDate>Thu, 03 Dec 2020 07:04:45 -0800</pubDate>
@@ -25,6 +34,17 @@
       <guid>https://natty-warhol.github.io/personal_logs/day_19/</guid>
       <description>OpenBSD still eludes me, and i have no idea what to do about it. It&amp;rsquo;s no longer installed on my computer, as I suddenly had things I had to do that work time-sensitive. I want to reinstall it, and I refuse to dual boot anything ever.
 The lack of virtualization is also quite odd, and I don&amp;rsquo;t know how I&amp;rsquo;m going to get past that, cause god-damn is that a sexy OS or what (like, I would love to use it for my server-side work too)?</description>
+    </item>
+    
+    <item>
+      <title>10.12 - The Void</title>
+      <link>https://natty-warhol.github.io/films/10.12.20_thevoid/</link>
+      <pubDate>Mon, 19 Oct 2020 17:06:25 -0700</pubDate>
+      
+      <guid>https://natty-warhol.github.io/films/10.12.20_thevoid/</guid>
+      <description>The Void (2016) &amp;ldquo;Shortly after delivering a patient to an understaffed hospital, a police officer experiences strange and violent occurences seemingly linked to a group of mysterious hooded figures.&amp;rdquo; - IMDb
+Uhuh.
+Well shit, buddy, If you&amp;rsquo;re looking for a good old raucus time of, &amp;ldquo;I don&amp;rsquo;t know what&amp;rsquo;s going on, but I don&amp;rsquo;t really care because look, pretty lights!&amp;rdquo;, then this is the movie for you. It&amp;rsquo;s thematically based off of lovecraftian stuff, and it definitely fits the bill almost perfectly.</description>
     </item>
     
     <item>
@@ -88,25 +108,6 @@ Starring the highly esteemed Keanu Reeves, and the young Elle Fanning (almost un
       <guid>https://natty-warhol.github.io/films/10.05.20_anamericanwerewolfinlondon/</guid>
       <description>An American Werewolf in London (1981) Starring Jenny Agutter (Nurse Alex Price), Griffin Dunne (Jack Goodman), and David Naughton (David Kessler), this is the best combination of reality and comedy put into one wholesome package.
 It starts off with Jack and David getting into their adventures in rural Britain, happening upon a small town, hoping for a meal to eat. After experiencing some strange interactions with the locals, and a foreshadowing warning (not recieving a meal, upsettingly), they continue onto their journey until misfortune reaches them and Jack is taken from life.</description>
-    </item>
-    
-    <item>
-      <title>10.04 - Event Horizon</title>
-      <link>https://natty-warhol.github.io/films/10.04.20_eventhorizon/</link>
-      <pubDate>Mon, 19 Oct 2020 17:01:55 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/films/10.04.20_eventhorizon/</guid>
-      <description>Event Horizon (1997) Damn does this movie get a lot of slack for it&amp;rsquo;s kind of shitty ending and all, also it kinda goes into the substanceless a bit; but I love it! It&amp;rsquo;s a campy mess! Also the effects are pretty alright considering when it came out.
-&amp;ldquo;A rescue crew investigates a spaceship that disappeared into a black hole and has now returned&amp;hellip;with someone or something new on-board.&amp;rdquo;, starring Laurence Fishburne and Sam Neill, this movie, I feel, takes advantage of these two actors beautifully.</description>
-    </item>
-    
-    <item>
-      <title>Day_18</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_18/</link>
-      <pubDate>Thu, 08 Oct 2020 08:01:24 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_18/</guid>
-      <description>I did it I installed OpenBSD onto my main computer, so far so good! The hardest part for me was setting up my touchpad (I like to turn it off and only use the trackpoint). I&amp;rsquo;ve still got a lot to do before I can call it production ready, but I&amp;rsquo;m really loving it! I don&amp;rsquo;t know why I got cold feet about it, this is the most fun I&amp;rsquo;ve had in a while!</description>
     </item>
     
   </channel>

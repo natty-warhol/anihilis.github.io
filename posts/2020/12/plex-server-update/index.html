@@ -14,7 +14,7 @@
 
     <title>
         
-            Plex Server Update :: anihilis ddns 
+            Plex Server Update :: anihilis ddns  — A Collection of Personal Notes
         
     </title>
 
@@ -45,7 +45,7 @@
 <meta itemprop="description" content="Plex Server Updated [Stable Edition] In my Many Journeys I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&rsquo;m going to focus on using Linux in the most organized way possible.">
 <meta itemprop="datePublished" content="2020-12-03T07:04:45-08:00" />
 <meta itemprop="dateModified" content="2020-12-03T07:04:45-08:00" />
-<meta itemprop="wordCount" content="1082">
+<meta itemprop="wordCount" content="1102">
 <meta itemprop="image" content="https://natty-warhol.github.io"/>
 
 
@@ -66,7 +66,7 @@
 <meta property="og:url" content="https://natty-warhol.github.io/posts/2020/12/plex-server-update/" />
 <meta property="og:image" content="https://natty-warhol.github.io"/>
 <meta property="article:published_time" content="2020-12-03T07:04:45-08:00" />
-<meta property="article:modified_time" content="2020-12-03T07:04:45-08:00" />
+<meta property="article:modified_time" content="2020-12-03T07:04:45-08:00" /><meta property="og:site_name" content="anihilis ddns" />
 
 
 
@@ -92,11 +92,11 @@
     <div class="logo">
         
             <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__text">$ cd ~/</span>
             <span class="logo__cursor" style=
                   "
-                   
-                   ">
+                   background-color:#fafafa;
+                   animation-duration:3s;">
             </span>
         
     </div>
@@ -106,7 +106,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://natty-warhol.github.io/about/">About</a></li><li><a href="https://natty-warhol.github.io/films/">Films</a></li><li><a href="https://natty-warhol.github.io/personal_logs/">Personal Logs</a></li><li><a href="https://natty-warhol.github.io/posts/">Posts</a></li>
+    <ul class="menu__inner"><li><a href="https://natty-warhol.github.io/about/">About</a></li><li><a href="https://natty-warhol.github.io/films/">Films</a></li><li><a href="https://natty-warhol.github.io/personal_logs/">Personal Logs</a></li><li><a href="https://natty-warhol.github.io/posts/">Posts</a></li><li><a href="https://natty-warhol.github.io/recipes/">Recipes</a></li>
     </ul>
 </nav>
 
@@ -163,7 +163,7 @@ I have remedied this mostly with my current laptop setup (because I would murder
 With the BSDs of the world, they are very small, the kernel only including things you absolutely need, and the software count is limited to ports from linux and anything the devs feel is absolutely important. It&rsquo;s also nice how everything is cohesive and in order, from the locations of the binaries to the settings, and GODDAMN do I love how there&rsquo;s never more than two solutions to one problem. I STG I&rsquo;m tired of having so many ways to fix one problem on my system, and knowing that I can go around and accidently do one of those other things not knowing I&rsquo;m screwing with another part of my system!<br>
 Anyways, I&rsquo;m done ranting now, I got a little keyboard rage there&hellip;.</p>
 <h2 id="beginning-notes">Beginning Notes</h2>
-<p>I no longer will include the link to my dotfiles here, because I now simply use it as a launching off point (also as explained before I plan to ditch linux ASAP). I still prefer to avoid encryption due to obvious reasons (needing to be there to reboot the machine).</p>
+<p>I now have the world&rsquo;s greatest dotfiles repo, and I will never share it because it has so much personal info as well as application files that I&rsquo;m not sure of the shareability of, that I&rsquo;m not willing to vet to share. However, I&rsquo;m going to link it <a href="https://github.com/natty-warhol/dotfiles-Github">here</a>, for my own convenience. Maybe I&rsquo;ll make a second public neutered git or something later, but this is where we&rsquo;re at.</p>
 <p>I currently have quite the set up of hard-drives. I currently do not have a RAID or any other kind of redundancy. I only carry media and personal files on them, nothing super mission critical (y&rsquo;know, besides to my boredom levels). Currently, this is what it looks like, no judgements:</p>
 <blockquote>
 <p>/dev/sda -&gt; /home/USER/Pictures (1Tb)<br>
@@ -186,8 +186,8 @@ The rootable account has all the services in it&rsquo;s name, and I can only per
 <h2 id="internet-access-and-security">Internet Access and Security</h2>
 <p>This time around, I went the easy way with Debian and XFCE as a desktop right out the box. I&rsquo;m using the standard gui NetworkManager connected to Ethernet (with a simultaneous WiFi for the VM we&rsquo;ll talk about later). I have it set up to access the Quad9 DNS only (no more 1.1.1.1).<br>
 For the firewall I&rsquo;m still using the trusty UFW (fuck iptables, and thank god for simplicity of use). I stick with the default of deny, and a limit on 64 (my SSH port of choice).</p>
-<pre><code>To                         Action      From
----
+<pre><code>To                         Action      From  
+---  
 syncthing                  ALLOW       Anywhere                  
 64/tcp                     LIMIT       Anywhere                  
 6985/tcp                   ALLOW       Anywhere                  
@@ -205,7 +205,7 @@ plexmediaserver (v6)       ALLOW       Anywhere (v6)
 6890:6999/udp (v6)         ALLOW       Anywhere (v6)             
 Samba (v6)                 ALLOW       Anywhere (v6)  
 </code></pre><h2 id="plex-installation">Plex Installation</h2>
-<p>Luckily, Debian has a PPA for direct Plex updates! just go to the website, install the deb file they provide, and then the mirror comes with it. Wamo-bamo.</p>
+<p>Luckily, Debian has a PPA for direct Plex updates! just go to the <a href="https://knapsu.eu/plex/">website</a>, install the deb file they provide, and then the mirror comes with it. Wamo-bamo.</p>
 <h2 id="virtual-machine-for-media-collection">Virtual Machine for Media Collection</h2>
 <p>In order to offload all the work I do for the server on my laptop I decided to turn my server into two computers instead of just getting a cheap other one. I&rsquo;m using Virtualbox (My server is a Galago Pro, it can&rsquo;t even VM right, I&rsquo;m not gonna waste my time with QEMU for that. I&rsquo;ve set the network up to bridged, and have my private VPN service that I connect to from the VM, and then can SSH into it from my laptop or the other server to use any of the services I choose to for collection.<br>
 Generally speaking, I will prefer to use Arch or something derivative for this, just because updates are good for security, especially if you&rsquo;re gonna be doing a lot of downloading other&rsquo;s materials.</p>
@@ -232,7 +232,7 @@ Generally speaking, I will prefer to use Arch or something derivative for this, 
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        1082 Words
+        1102 Words
       </p>
 
       <p>
@@ -258,8 +258,8 @@ Generally speaking, I will prefer to use Arch or something derivative for this, 
 
           
             <span class="button next">
-              <a href="https://natty-warhol.github.io/posts/2020/09/plex-server-setup-redacted/">
-                <span class="button__text">Plex Server Setup --Redacted</span>
+              <a href="https://natty-warhol.github.io/posts/2020/09/plex-server-setup-/redacted/">
+                <span class="button__text">Plex Server Setup //Redacted//</span>
                 <span class="button__icon">→</span>
               </a>
             </span>
