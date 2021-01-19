@@ -5,16 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="anihilis ">
-<meta name="description" content="Artix Linux Security (Should This be put in Posts? Y.O.L.O. why not Both?) I&amp;rsquo;m on tiling! No buttons for me!! So yeah, I basically completely switched to using cli everything, and so for networking I am using NetworkManager, it&amp;rsquo;s been weird having to get used to it&amp;hellip; It&amp;rsquo;s like it&amp;rsquo;s too easy for me&amp;hellip; that I can&amp;rsquo;t figure it out? Like it makes sense, but&amp;hellip; I can&amp;rsquo;t use my intuiting? Anyways, I still can&amp;rsquo;t figure out how to use it with openvpn, and I don&amp;rsquo;t know how to use wireguard without a file&amp;hellip; and I don&amp;rsquo;t want to figure out if I have to make the file or what&amp;hellip;." />
+<meta name="description" content="Okay, so I finally install OpenBSD and goddamn, I miss it. Of course I got rid of it after a week and installed Arch Linux with herbstluftwm (my default setup for the past 10 years, despite trying to break it).
+I really love OpenBSD, holy shit, it&amp;rsquo;s amazing, well put together, well secured, and has really good hardware support (for Lenovo at least), but has terrible software support. I figure it&amp;rsquo;s because of the security settings, but I can&amp;rsquo;t stand not being able to read out my battery status in live-time, as well as missed the ability to easily handle other filesystems and devices." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://natty-warhol.github.io/personal_logs/day_10/" />
+<link rel="canonical" href="https://natty-warhol.github.io/personal_logs/day_21/" />
 
 
     <title>
         
-            Day_10 :: anihilis ddns  — A Collection of Personal Notes
+            Day_21 :: anihilis ddns  — A Collection of Personal Notes
         
     </title>
 
@@ -41,11 +42,12 @@
 
 
 
-<meta itemprop="name" content="Day_10">
-<meta itemprop="description" content="Artix Linux Security (Should This be put in Posts? Y.O.L.O. why not Both?) I&rsquo;m on tiling! No buttons for me!! So yeah, I basically completely switched to using cli everything, and so for networking I am using NetworkManager, it&rsquo;s been weird having to get used to it&hellip; It&rsquo;s like it&rsquo;s too easy for me&hellip; that I can&rsquo;t figure it out? Like it makes sense, but&hellip; I can&rsquo;t use my intuiting? Anyways, I still can&rsquo;t figure out how to use it with openvpn, and I don&rsquo;t know how to use wireguard without a file&hellip; and I don&rsquo;t want to figure out if I have to make the file or what&hellip;.">
-<meta itemprop="datePublished" content="2020-08-05T16:23:44-07:00" />
-<meta itemprop="dateModified" content="2020-08-05T16:23:44-07:00" />
-<meta itemprop="wordCount" content="175">
+<meta itemprop="name" content="Day_21">
+<meta itemprop="description" content="Okay, so I finally install OpenBSD and goddamn, I miss it. Of course I got rid of it after a week and installed Arch Linux with herbstluftwm (my default setup for the past 10 years, despite trying to break it).
+I really love OpenBSD, holy shit, it&rsquo;s amazing, well put together, well secured, and has really good hardware support (for Lenovo at least), but has terrible software support. I figure it&rsquo;s because of the security settings, but I can&rsquo;t stand not being able to read out my battery status in live-time, as well as missed the ability to easily handle other filesystems and devices.">
+<meta itemprop="datePublished" content="2021-01-11T15:47:05-08:00" />
+<meta itemprop="dateModified" content="2021-01-11T15:47:05-08:00" />
+<meta itemprop="wordCount" content="189">
 <meta itemprop="image" content="https://natty-warhol.github.io"/>
 
 
@@ -55,25 +57,27 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://natty-warhol.github.io"/>
 
-<meta name="twitter:title" content="Day_10"/>
-<meta name="twitter:description" content="Artix Linux Security (Should This be put in Posts? Y.O.L.O. why not Both?) I&rsquo;m on tiling! No buttons for me!! So yeah, I basically completely switched to using cli everything, and so for networking I am using NetworkManager, it&rsquo;s been weird having to get used to it&hellip; It&rsquo;s like it&rsquo;s too easy for me&hellip; that I can&rsquo;t figure it out? Like it makes sense, but&hellip; I can&rsquo;t use my intuiting? Anyways, I still can&rsquo;t figure out how to use it with openvpn, and I don&rsquo;t know how to use wireguard without a file&hellip; and I don&rsquo;t want to figure out if I have to make the file or what&hellip;."/>
+<meta name="twitter:title" content="Day_21"/>
+<meta name="twitter:description" content="Okay, so I finally install OpenBSD and goddamn, I miss it. Of course I got rid of it after a week and installed Arch Linux with herbstluftwm (my default setup for the past 10 years, despite trying to break it).
+I really love OpenBSD, holy shit, it&rsquo;s amazing, well put together, well secured, and has really good hardware support (for Lenovo at least), but has terrible software support. I figure it&rsquo;s because of the security settings, but I can&rsquo;t stand not being able to read out my battery status in live-time, as well as missed the ability to easily handle other filesystems and devices."/>
 
 
 
-    <meta property="og:title" content="Day_10" />
-<meta property="og:description" content="Artix Linux Security (Should This be put in Posts? Y.O.L.O. why not Both?) I&rsquo;m on tiling! No buttons for me!! So yeah, I basically completely switched to using cli everything, and so for networking I am using NetworkManager, it&rsquo;s been weird having to get used to it&hellip; It&rsquo;s like it&rsquo;s too easy for me&hellip; that I can&rsquo;t figure it out? Like it makes sense, but&hellip; I can&rsquo;t use my intuiting? Anyways, I still can&rsquo;t figure out how to use it with openvpn, and I don&rsquo;t know how to use wireguard without a file&hellip; and I don&rsquo;t want to figure out if I have to make the file or what&hellip;." />
+    <meta property="og:title" content="Day_21" />
+<meta property="og:description" content="Okay, so I finally install OpenBSD and goddamn, I miss it. Of course I got rid of it after a week and installed Arch Linux with herbstluftwm (my default setup for the past 10 years, despite trying to break it).
+I really love OpenBSD, holy shit, it&rsquo;s amazing, well put together, well secured, and has really good hardware support (for Lenovo at least), but has terrible software support. I figure it&rsquo;s because of the security settings, but I can&rsquo;t stand not being able to read out my battery status in live-time, as well as missed the ability to easily handle other filesystems and devices." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://natty-warhol.github.io/personal_logs/day_10/" />
+<meta property="og:url" content="https://natty-warhol.github.io/personal_logs/day_21/" />
 <meta property="og:image" content="https://natty-warhol.github.io"/>
-<meta property="article:published_time" content="2020-08-05T16:23:44-07:00" />
-<meta property="article:modified_time" content="2020-08-05T16:23:44-07:00" /><meta property="og:site_name" content="anihilis ddns" />
+<meta property="article:published_time" content="2021-01-11T15:47:05-08:00" />
+<meta property="article:modified_time" content="2021-01-11T15:47:05-08:00" /><meta property="og:site_name" content="anihilis ddns" />
 
 
 
 
 
 
-    <meta property="article:published_time" content="2020-08-05 16:23:44 -0700 PDT" />
+    <meta property="article:published_time" content="2021-01-11 15:47:05 -0800 PST" />
 
 
 
@@ -139,26 +143,16 @@
         </div>
 
         <article>
-            <h2 class="post-title"><a href="https://natty-warhol.github.io/personal_logs/day_10/">Day_10</a></h2>
+            <h2 class="post-title"><a href="https://natty-warhol.github.io/personal_logs/day_21/">Day_21</a></h2>
 
             
 
             <div class="post-content">
-                <h1 id="artix-linux-security-should-this-be-put-in-posts-yolo-why-not-both">Artix Linux Security (Should This be put in Posts? Y.O.L.O. why not Both?)</h1>
-<h2 id="im-on-tiling-no-buttons-for-me">I&rsquo;m on tiling! No buttons for me!!</h2>
-<p>So yeah, I basically completely switched to using cli everything, and so for networking I am using NetworkManager, it&rsquo;s been weird having to get used to it&hellip; It&rsquo;s like it&rsquo;s too easy for me&hellip; that I can&rsquo;t figure it out? Like it makes sense, but&hellip; I can&rsquo;t use my intuiting? Anyways, I still can&rsquo;t figure out how to use it with openvpn, and I don&rsquo;t know how to use wireguard without a file&hellip; and I don&rsquo;t want to figure out if I have to make the file or what&hellip;.</p>
-<p>With nmcli, all I had to do was edit the DNS settings for my network, which is simple enough!</p>
-<blockquote>
-<p>nmcli con mod <!-- raw HTML omitted --> ipv(4/6).dns &ldquo;x.x.x.x x.x.x.x&rdquo;<br>
-nmcli con mod <!-- raw HTML omitted --> ipv(4/6).ignore-auto-dns yes</p>
-</blockquote>
-<blockquote>
-<p>nmcli con down <!-- raw HTML omitted --><br>
-nmcli con up <!-- raw HTML omitted --></p>
-</blockquote>
-<p>VPNs are easy, just downlaod openvpn, then connect with a config file. WHOOP.</p>
-<p>I think my partner thinks I&rsquo;m crazy&hellip; I feel like I should go outside&hellip; But&hellip;. the COVID&hellip;</p>
-<p><img src="https://natty-warhol.github.io/static/artix_desktop.png" alt="Gratuitous Screenshot"></p>
+                <h1 id="okay-so-i-finally-install-openbsd">Okay, so I finally install OpenBSD</h1>
+<p>and goddamn, I miss it. Of course I got rid of it after a week and installed Arch Linux with herbstluftwm (my default setup for the past 10 years, despite trying to break it).</p>
+<p>I really love OpenBSD, holy shit, it&rsquo;s amazing, well put together, well secured, and has really good hardware support (for Lenovo at least), but has terrible software support. I figure it&rsquo;s because of the security settings, but I can&rsquo;t stand not being able to read out my battery status in live-time, as well as missed the ability to easily handle other filesystems and devices.</p>
+<p>There is however a lot to learn from using it. They way that they have programs built by default is tantilizing honestly, being able to just run unviel OOTB with your web browser is really quite quaint I might say as well too. It also taught me to write more scripts and properly handling filesystem manageament.</p>
+<p>Anyways, I think I&rsquo;m going to set up a VM and continue to create my scripts and such with it, planning still, to one day run it on metal.</p>
 
             </div>
         </article>

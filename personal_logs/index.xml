@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 30 Nov 2020 15:48:24 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 15:47:05 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_21</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_21/</link>
+      <pubDate>Mon, 11 Jan 2021 15:47:05 -0800</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_21/</guid>
+      <description>Okay, so I finally install OpenBSD and goddamn, I miss it. Of course I got rid of it after a week and installed Arch Linux with herbstluftwm (my default setup for the past 10 years, despite trying to break it).
+I really love OpenBSD, holy shit, it&amp;rsquo;s amazing, well put together, well secured, and has really good hardware support (for Lenovo at least), but has terrible software support. I figure it&amp;rsquo;s because of the security settings, but I can&amp;rsquo;t stand not being able to read out my battery status in live-time, as well as missed the ability to easily handle other filesystems and devices.</description>
+    </item>
+    
+    <item>
+      <title>Day_20 --TW: Death, Cancer</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_20/</link>
+      <pubDate>Mon, 21 Dec 2020 09:18:11 -0800</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_20/</guid>
+      <description>I Watched my Grandfather die, and I&amp;rsquo;m starting to think that I still haven&amp;rsquo;t gotten over it. My mom&amp;rsquo;s father, was a shitty human being. He would beat my mom and her sisters, and he was uncomfortably racist, as well as just a terrible influence.
+As a kid however, I didn&amp;rsquo;t see all that, I saw a man who was short in attitude, who would stand his ground, and knew what he wanted.</description>
+    </item>
+    
     <item>
       <title>Day_19</title>
       <link>https://natty-warhol.github.io/personal_logs/day_19/</link>
@@ -82,25 +102,6 @@ The only thing holding me back is the fear of software stability for my photo an
       
       <guid>https://natty-warhol.github.io/personal_logs/day_12/</guid>
       <description>P.O.S. Point of Sale System I am working on a Proof of Concept POS System for my work, because I am tired of the constant problems presenting themselves when I least want them to. I am looking to switch to a completely disconnected, open source solution for work with multiple systems across two states and 5 stores. They are currently using very outdated (almost XP era) PCs with windows 10 locked down, with a shit POS system, and a terrible set up of permissions for apps and users.</description>
-    </item>
-    
-    <item>
-      <title>Day_11</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_11/</link>
-      <pubDate>Thu, 20 Aug 2020 09:28:11 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_11/</guid>
-      <description>Is There a Better One? Is there a better version? Is there Another Version? Are there really infinite realities? Is my old boss really Batman?
-Just a couple of questions.</description>
-    </item>
-    
-    <item>
-      <title>Day_10</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_10/</link>
-      <pubDate>Wed, 05 Aug 2020 16:23:44 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_10/</guid>
-      <description>Artix Linux Security (Should This be put in Posts? Y.O.L.O. why not Both?) I&amp;rsquo;m on tiling! No buttons for me!! So yeah, I basically completely switched to using cli everything, and so for networking I am using NetworkManager, it&amp;rsquo;s been weird having to get used to it&amp;hellip; It&amp;rsquo;s like it&amp;rsquo;s too easy for me&amp;hellip; that I can&amp;rsquo;t figure it out? Like it makes sense, but&amp;hellip; I can&amp;rsquo;t use my intuiting? Anyways, I still can&amp;rsquo;t figure out how to use it with openvpn, and I don&amp;rsquo;t know how to use wireguard without a file&amp;hellip; and I don&amp;rsquo;t want to figure out if I have to make the file or what&amp;hellip;.</description>
     </item>
     
   </channel>
