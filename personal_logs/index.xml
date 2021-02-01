@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 11 Jan 2021 15:47:05 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Feb 2021 13:32:40 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_22</title>
+      <link>https://natty-warhol.github.io/personal_logs/day_22/</link>
+      <pubDate>Mon, 01 Feb 2021 13:32:40 -0800</pubDate>
+      
+      <guid>https://natty-warhol.github.io/personal_logs/day_22/</guid>
+      <description>The Constant Need for Improvement It kills me. I have a dog-damned problem with organization. It&amp;rsquo;s like it&amp;rsquo;s the only thing that will get me off anymore is a well arranged stack of books, or a meticulousely organized filesystem to take it the nerdy way.
+I almost find it infuriating at times however, how I am constantly changing what my systems are for and what they need to be able to do.</description>
+    </item>
+    
     <item>
       <title>Day_21</title>
       <link>https://natty-warhol.github.io/personal_logs/day_21/</link>
@@ -93,15 +103,6 @@ The only thing holding me back is the fear of software stability for my photo an
       
       <guid>https://natty-warhol.github.io/personal_logs/day_13/</guid>
       <description>Getting Away Sitting here on day 1 Million or so of our COVID trials, I watch Calvary, a film from 2014 with an all star cast of european actors (I don&amp;rsquo;t dare assume where they&amp;rsquo;re all from, I&amp;rsquo;m American and stupid). The film is about a Priest who is forced into a situation where a man angry at the Catholic church decides to kill a good priest for attention because of all the evils the bad priests have done.</description>
-    </item>
-    
-    <item>
-      <title>Day_12</title>
-      <link>https://natty-warhol.github.io/personal_logs/day_12/</link>
-      <pubDate>Thu, 27 Aug 2020 11:51:35 -0700</pubDate>
-      
-      <guid>https://natty-warhol.github.io/personal_logs/day_12/</guid>
-      <description>P.O.S. Point of Sale System I am working on a Proof of Concept POS System for my work, because I am tired of the constant problems presenting themselves when I least want them to. I am looking to switch to a completely disconnected, open source solution for work with multiple systems across two states and 5 stores. They are currently using very outdated (almost XP era) PCs with windows 10 locked down, with a shit POS system, and a terrible set up of permissions for apps and users.</description>
     </item>
     
   </channel>
