@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>untagged on anihilis ddns</title>
-    <link>https://natty-warhol.github.io/tags/untagged/</link>
+    <link>https://anihilis.ddns.me/tags/untagged/</link>
     <description>Recent content in untagged on anihilis ddns</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 09 Feb 2021 10:55:22 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 10:55:22 -0800</lastBuildDate><atom:link href="https://anihilis.ddns.me/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ArchLinux_NewStandard</title>
-      <link>https://natty-warhol.github.io/posts/2021/02/archlinux_newstandard/</link>
+      <link>https://anihilis.ddns.me/posts/2021/02/archlinux_newstandard/</link>
       <pubDate>Tue, 09 Feb 2021 10:55:22 -0800</pubDate>
       
-      <guid>https://natty-warhol.github.io/posts/2021/02/archlinux_newstandard/</guid>
+      <guid>https://anihilis.ddns.me/posts/2021/02/archlinux_newstandard/</guid>
       <description>Arch Linux Setup For My Borg-Collective of Devices My Mission: My ultimate goal every time I do this, is to improve personal performance and security, while also making things as quick and easy to set up as possible. This setup is only temporary (like they all are, really), until I learn to setup NixOS as it provides everything I could ask for within a system.
 USB Installation: Just going to plop this in here for a quick reference in case I or you may need it.</description>
     </item>
     
     <item>
       <title>Plex Server Update</title>
-      <link>https://natty-warhol.github.io/posts/2020/12/plex-server-update/</link>
+      <link>https://anihilis.ddns.me/posts/2020/12/plex-server-update/</link>
       <pubDate>Thu, 03 Dec 2020 07:04:45 -0800</pubDate>
       
-      <guid>https://natty-warhol.github.io/posts/2020/12/plex-server-update/</guid>
+      <guid>https://anihilis.ddns.me/posts/2020/12/plex-server-update/</guid>
       <description>Plex Server Updated [Stable Edition] In my Many Journeys I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&amp;rsquo;m going to focus on using Linux in the most organized way possible.</description>
     </item>
     
     <item>
       <title>Plex Server Setup //Redacted//</title>
-      <link>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-/redacted/</link>
+      <link>https://anihilis.ddns.me/posts/2020/09/plex-server-setup-/redacted/</link>
       <pubDate>Thu, 03 Sep 2020 12:00:45 -0700</pubDate>
       
-      <guid>https://natty-warhol.github.io/posts/2020/09/plex-server-setup-/redacted/</guid>
+      <guid>https://anihilis.ddns.me/posts/2020/09/plex-server-setup-/redacted/</guid>
       <description>A Walkthrough I have finally found my perfect Plex setup, as shown in my post about setting up Artix (the subcategory about Servers is the example). My preferred setup is a boxed in Plex setup, to prevent access unwanted access from the UPnP ports.
 Beginning Notes I believe we can collect installation notes from the https://natty-warhol.github.io/posts/2020/08/artixandrunit-install/. I prefer to avoid encryption so I can restart the computer remotely.
 Mapping looks something like this:</description>

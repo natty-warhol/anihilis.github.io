@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>security on anihilis ddns</title>
-    <link>https://natty-warhol.github.io/tags/security/</link>
+    <link>https://anihilis.ddns.me/tags/security/</link>
     <description>Recent content in security on anihilis ddns</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 23 Jul 2020 05:07:07 -0700</lastBuildDate><atom:link href="https://natty-warhol.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jul 2020 05:07:07 -0700</lastBuildDate><atom:link href="https://anihilis.ddns.me/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Internet Security (Active Article)</title>
-      <link>https://natty-warhol.github.io/posts/2020/07/internet-security-active-article/</link>
+      <link>https://anihilis.ddns.me/posts/2020/07/internet-security-active-article/</link>
       <pubDate>Thu, 23 Jul 2020 05:07:07 -0700</pubDate>
       
-      <guid>https://natty-warhol.github.io/posts/2020/07/internet-security-active-article/</guid>
+      <guid>https://anihilis.ddns.me/posts/2020/07/internet-security-active-article/</guid>
       <description>Hiding From the Internet &amp;ndash; Making a Plan * Information largely *taken* from the EFF1
  What do you want to hide? How bad are the consequences if I fail? How Likely is it That I will Need to Protect it? How Much Trouble am I Willing to go Through to try to Prevent Potential Consequences? Security Planning as a Regular Practice How far are you Willing to go? Simple Security Measures  Browser Add-ons Firewalls Encryption in Communication   Moderate Difficulty Actions  GPG - Encrypt on your own!</description>
     </item>
