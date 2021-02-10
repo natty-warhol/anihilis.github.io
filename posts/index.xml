@@ -6,8 +6,124 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 03 Dec 2020 07:04:45 -0800</lastBuildDate>
+        <lastBuildDate>Tue, 09 Feb 2021 10:55:22 -0800</lastBuildDate>
         <atom:link href="https://natty-warhol.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ArchLinux_NewStandard</title>
+            <link>https://natty-warhol.github.io/posts/2021/02/archlinux_newstandard/</link>
+            <pubDate>Tue, 09 Feb 2021 10:55:22 -0800</pubDate>
+            
+            <guid>https://natty-warhol.github.io/posts/2021/02/archlinux_newstandard/</guid>
+            <description>Arch Linux Setup For My Borg-Collective of Devices My Mission: My ultimate goal every time I do this, is to improve personal performance and security, while also making things as quick and easy to set up as possible. This setup is only temporary (like they all are, really), until I learn to setup NixOS as it provides everything I could ask for within a system.
+USB Installation: Just going to plop this in here for a quick reference in case I or you may need it.</description>
+            <content type="html"><![CDATA[<h3 id="arch-linux-setup">Arch Linux Setup</h3>
+<h2 id="for-my-borg-collective-of-devices">For My Borg-Collective of Devices</h2>
+<h3 id="my-mission">My Mission:</h3>
+<p>My ultimate goal every time I do this, is to improve personal performance and security, while also making things as quick and easy to set up as possible. This setup is only temporary (like they all are, really), until I learn to setup NixOS as it provides everything I could ask for within a system.</p>
+<h3 id="usb-installation">USB Installation:</h3>
+<p>Just going to plop this in here for a quick reference in case I or you may need it.</p>
+<pre><code>sudo dd bs=4M if=path/to/image.iso of=/dev/sdx status=progress oflag=sync  
+</code></pre><h2 id="installation">Installation</h2>
+<h3 id="beginning-notes">Beginning Notes:</h3>
+<p>Make sure you are connected to the internet. If you cannot figure out wifi, use ethernet. The default way to use wifi with Arch Linux is with the <code>wifi-menu</code> program, if you cannot successfully connect, make sure the module is turned on <code>ip link set down &lt;device&gt;</code></p>
+<p>Before installation, take note of how you wish to interfacw with this device. I have this set up in such a way that you could brick access to it if you aren&rsquo;t careful (security features). Just be aware, this is intended to be used with mobile devices with I/O embedded.</p>
+<h3 id="partitioning">Partitioning:</h3>
+<p>LUKs Encryption:<br>
+With this process, I don&rsquo;t try too hard to encrypt things, it&rsquo;s important to recognize that unless you actually turn off your device regularly, this doesn&rsquo;t really make too much of a difference. I only encrypt the storage portion, leaving the UEFI and SWAP partitions open. Those two portions of the computer are flushed/encrypted right off the bat, so not too important to worry about.</p>
+<pre><code>parted /dev/sdx  
+mklabel gpt  
+mkpart ESP fat32 1Mib 512Mib  
+set 1 boot on  
+name 1 efi  
+</code></pre><pre><code>mkpart primary linux-swap 512Mib 8Gb  
+name 2 swap  
+</code></pre><pre><code>mkpart primary 8Gb 100%  
+set 3 lvm on  
+name 3 lvm  
+print  
+</code></pre><pre><code>modprobe dm-crypt  
+modprobe dm-mod  
+</code></pre><pre><code>cryptsetup luksFormat -v -s 512 -h sha512 /dev/sdx3  
+  
+cryptsetup open &lt;device&gt; &lt;name&gt;  
+</code></pre><p><code>&lt;name&gt;</code> is the device to create under /dev/mapper<br>
+<code>&lt;device&gt;</code> is the encrypted device</p>
+<p><strong>Example: cryptsetup open /dev/sdx3 luks_lvm</strong></p>
+<p>LVM Setup:<br>
+Create physical volume<br>
+<code>pvcreate /dev/mapper/luks_lvm</code><br>
+<code>vgcreate arch /dev/mapper/luks_lvm</code></p>
+<pre><code>lvcreate -n root -L XXG arch  
+lvcreate -n home -L XXG arch  
+</code></pre><p>Format Partitions:</p>
+<pre><code>mkfs.fat -F32 /dev/sdx1  
+mkfs.ext4 -L root /dev/mapper/arch-root  
+mkfs.ext4 -L home /dev/mapper/arch-home  
+mkswap /dev/sdx2  
+</code></pre><p>Mount Partitions:</p>
+<pre><code>swapon /dev/sdx2  
+mount /dev/mapper/arch-root /mnt  
+mkdir -p /mnt/{home,boot}  
+mount /dev/sdx1 /mnt/boot  
+mount /dev/mapper/arch-home /mnt/home  
+mkdir /mnt/boot/efi  
+</code></pre><pre><code>lsblk -f  
+</code></pre><h3 id="install-linux">Install Linux</h3>
+<p><code>pacstrap /mnt base base-devel git linux-hardened</code></p>
+<p><code>arch-chroot /mnt</code></p>
+<p>Base Configuration:</p>
+<pre><code>ln -sf /usr/share/zoneinfo/America/Los_Angeles  
+hwclock --systohc  
+</code></pre><p>vim <code>/etc/locale.gen</code><br>
+<code>en_US.UTF-8 UTF-8</code></p>
+<p><code>locale-gen</code></p>
+<p>vim <code>/etc/locale.conf</code></p>
+<pre><code>export LANG=&quot;en_US.UTF-8&quot;  
+export LC_COLLATE=&quot;C&quot;  
+</code></pre><p><strong>Boot Loader:</strong><br>
+Make sure that you are booted into UEFI mode, because this is 2021, and it&rsquo;s no longer a conspiracy.<br>
+<code>ls /sys/firmware/efi/efivars</code></p>
+<p>You should be chrooted into the install, so if your boot and EFI partitions aren&rsquo;t mounted, you&rsquo;re doing it wrong, and fix yourself. Once all the partitions are correctly mounted, go ahead and do the simplest boot setup ever:<br>
+<code>bootctl install</code></p>
+<p>Once completed, take a look in your <code>/boot</code> folder and make sure all the things are present.</p>
+<p>Go ahead and pull up <code>/boot/loader/loader.conf</code><br>
+Make sure that <code>default arch</code> is present, if you wish to shorten the display time of the loader, put in <code>timeout X</code>.</p>
+<p>Continue on to <code>/boot/loader/entries/arch.conf</code><br>
+This is where the fun security begins! Make sure everything is displayed correctly, from the kernel name, to the title (you can change it to what you like though, if you so insist).<br>
+The changes I make are as goes:<br>
+add this above the original initrd line:<br>
+<code>initrd           /intel-ucode.img</code></p>
+<p>I can&rsquo;t remember how much of this line is different from the original composition, so I&rsquo;m just going to copy paste what I have currently, and just know that it&rsquo;s for mounted the encrypted filesystem, and the ipv6 setting is to force the device to only use ipv4. Add this line to the end of the file.<br>
+<code>options      cryptdevice=/dev/lvm/lvroot:root root=/dev/mapper/root ipv6.disable=1 quiet rw</code></p>
+<p><strong>Users:</strong><br>
+Change root password:<br>
+<code>passwd</code><br>
+Make your user:</p>
+<pre><code>useradd -m user  
+passwd user  
+</code></pre><p><strong>Network Config:</strong><br>
+Open <code>/etc/hostname</code> and put in your desired device name.<br>
+<code>pacman -S dhcpcd networkmanager</code></p>
+<h3 id="all-done">All Done!</h3>
+<pre><code>exit  
+umount -R /mnt  
+reboot  
+</code></pre><p>Well, at least with the first part. You have officially gotten a hardened version of Arch Linux installed. There is further configuration to be had however post installation, which shall be covered next.</p>
+<h3 id="post-installation">Post-Installation</h3>
+<p>Once fully rebooted and logged in as root, proceed to <code>visudo</code> and give your user permissions in a way like this:<br>
+<code>%wheel ALL=(ALL) ALL</code><br>
+If you want to have access to certain apps without using a password, go ahead and enter in seperate lines like this:<br>
+<code>user ALL=(ALL) NOPASSWD: /usr/bin/torguard</code></p>
+<p>To continue the theme of security, I am now using USB-Guard to prevent mystery drives. Especially since I do prefer to have Udiskie set up and turned on.<br>
+All you would have to do is just <code>sudo pacman -S usbguard</code> with a quick little <code>sudo systemctl enable usbguard</code>
+I have a git repo where I hold all my configuration files and passwords (safe, I know&hellip; I&rsquo;m planning to make a private git repo soon however..), It&rsquo;s an important step for my setup, so if you&rsquo;re not me, hopefully you have your own plans for a desktop setup as well as gpg creds and the such.</p>
+<pre><code>mkdir $HOME/Documents  
+cd $HOME/Documents  
+git clone https://github.com/natty-warhol/dotfiles-Github.git  
+</code></pre><p>After this, I have a special post-install script that automagically installs all my environment packages, as well as sets up samba mounts and all the other things. You too, can do this, if you learn simple bash scripting!</p>
+]]></content>
+        </item>
         
         <item>
             <title>Plex Server Update</title>

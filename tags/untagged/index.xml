@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 03 Dec 2020 07:04:45 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 10:55:22 -0800</lastBuildDate><atom:link href="https://natty-warhol.github.io/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ArchLinux_NewStandard</title>
+      <link>https://natty-warhol.github.io/posts/2021/02/archlinux_newstandard/</link>
+      <pubDate>Tue, 09 Feb 2021 10:55:22 -0800</pubDate>
+      
+      <guid>https://natty-warhol.github.io/posts/2021/02/archlinux_newstandard/</guid>
+      <description>Arch Linux Setup For My Borg-Collective of Devices My Mission: My ultimate goal every time I do this, is to improve personal performance and security, while also making things as quick and easy to set up as possible. This setup is only temporary (like they all are, really), until I learn to setup NixOS as it provides everything I could ask for within a system.
+USB Installation: Just going to plop this in here for a quick reference in case I or you may need it.</description>
+    </item>
+    
     <item>
       <title>Plex Server Update</title>
       <link>https://natty-warhol.github.io/posts/2020/12/plex-server-update/</link>
