@@ -7,14 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 26 Feb 2021 07:20:13 -0800</lastBuildDate><atom:link href="https://anihilis.ddns.me/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Mar 2021 11:41:57 -0700</lastBuildDate><atom:link href="https://anihilis.ddns.me/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_26</title>
+      <link>https://anihilis.ddns.me/personal_logs/day_26/</link>
+      <pubDate>Mon, 22 Mar 2021 11:41:57 -0700</pubDate>
+      
+      <guid>https://anihilis.ddns.me/personal_logs/day_26/</guid>
+      <description>The Futility of Socializing I think I&amp;rsquo;m at my wits end y&amp;rsquo;all. I don&amp;rsquo;t know if I care for people enough to ever want to socialize with them really anymore. Complacency towards people isn&amp;rsquo;t really a new thing for me, but this level of &amp;lsquo;not giving a fuck&amp;rsquo; is too high to comprehend.
+After all the bullshit I&amp;rsquo;ve had to deal with in just this month; with my work, my family, and my now ex-partner, why should I have time for anyone, if no one has time for me?</description>
+    </item>
+    
     <item>
       <title>Day_25</title>
       <link>https://anihilis.ddns.me/personal_logs/day_25/</link>
       <pubDate>Fri, 26 Feb 2021 07:20:13 -0800</pubDate>
       
       <guid>https://anihilis.ddns.me/personal_logs/day_25/</guid>
-      <description>I hate Google and it&amp;rsquo;s not even that personal, like it is; they&amp;rsquo;re a terrible company and need to be split up like five years ago, but that&amp;rsquo;s not what I&amp;rsquo;m talking about today.
+      <description>I hate Google and it&amp;rsquo;s not even that personal; like it is, they&amp;rsquo;re a terrible company and need to be split up like five years ago, but that&amp;rsquo;s not what I&amp;rsquo;m talking about today.
 Holy shit, I hate android phones. I almost want to go back to a dumb phone, but ironically, somehow those are even less secure now that everyone is tracking everything. Honestly, if Google (and other phone providers) would stop shoving all their own services into their phones I would probably feel a lot better.</description>
     </item>
     
@@ -94,16 +104,6 @@ The lack of virtualization is also quite odd, and I don&amp;rsquo;t know how I&a
       <guid>https://anihilis.ddns.me/personal_logs/day_17/</guid>
       <description>Colour Scheming is a Strange Beast I love pretty colours, but I hate having to set up my system with whole new colour scheming.
 I&amp;rsquo;m working on swtiching from the Dracula theme to the Nord theme (I hate saturated work stations&amp;hellip; too busy for long term work). GODDAMN I just wish there was a way to set up all the different config files to respond to the Xresources&amp;hellip;.. hmm&amp;hellip; Maybe I could figure something out&amp;hellip;.</description>
-    </item>
-    
-    <item>
-      <title>Day_16</title>
-      <link>https://anihilis.ddns.me/personal_logs/day_16/</link>
-      <pubDate>Sat, 26 Sep 2020 16:54:11 -0700</pubDate>
-      
-      <guid>https://anihilis.ddns.me/personal_logs/day_16/</guid>
-      <description>I&amp;rsquo;ve been thinking, I feel like I should try out OpenBSD. I am finally in a situation where my current setup is fully realized, and fairly stable. Somehow though, all I can think about is how fun it would be to drop this system for something percievably more stable and secure.
-The only thing holding me back is the fear of software stability for my photo and video editing, also will switching fuck up my ability to cheat and do some things with DRM?</description>
     </item>
     
   </channel>

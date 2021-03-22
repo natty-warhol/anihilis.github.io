@@ -7,14 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 26 Feb 2021 07:20:13 -0800</lastBuildDate><atom:link href="https://anihilis.ddns.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Mar 2021 11:41:57 -0700</lastBuildDate><atom:link href="https://anihilis.ddns.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_26</title>
+      <link>https://anihilis.ddns.me/personal_logs/day_26/</link>
+      <pubDate>Mon, 22 Mar 2021 11:41:57 -0700</pubDate>
+      
+      <guid>https://anihilis.ddns.me/personal_logs/day_26/</guid>
+      <description>The Futility of Socializing I think I&amp;rsquo;m at my wits end y&amp;rsquo;all. I don&amp;rsquo;t know if I care for people enough to ever want to socialize with them really anymore. Complacency towards people isn&amp;rsquo;t really a new thing for me, but this level of &amp;lsquo;not giving a fuck&amp;rsquo; is too high to comprehend.
+After all the bullshit I&amp;rsquo;ve had to deal with in just this month; with my work, my family, and my now ex-partner, why should I have time for anyone, if no one has time for me?</description>
+    </item>
+    
     <item>
       <title>Day_25</title>
       <link>https://anihilis.ddns.me/personal_logs/day_25/</link>
       <pubDate>Fri, 26 Feb 2021 07:20:13 -0800</pubDate>
       
       <guid>https://anihilis.ddns.me/personal_logs/day_25/</guid>
-      <description>I hate Google and it&amp;rsquo;s not even that personal, like it is; they&amp;rsquo;re a terrible company and need to be split up like five years ago, but that&amp;rsquo;s not what I&amp;rsquo;m talking about today.
+      <description>I hate Google and it&amp;rsquo;s not even that personal; like it is, they&amp;rsquo;re a terrible company and need to be split up like five years ago, but that&amp;rsquo;s not what I&amp;rsquo;m talking about today.
 Holy shit, I hate android phones. I almost want to go back to a dumb phone, but ironically, somehow those are even less secure now that everyone is tracking everything. Honestly, if Google (and other phone providers) would stop shoving all their own services into their phones I would probably feel a lot better.</description>
     </item>
     
@@ -93,16 +103,6 @@ As a kid however, I didn&amp;rsquo;t see all that, I saw a man who was short in 
       
       <guid>https://anihilis.ddns.me/posts/2020/12/plex-server-update/</guid>
       <description>Plex Server Updated [Stable Edition] In my Many Journeys I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&amp;rsquo;m going to focus on using Linux in the most organized way possible.</description>
-    </item>
-    
-    <item>
-      <title>Day_19</title>
-      <link>https://anihilis.ddns.me/personal_logs/day_19/</link>
-      <pubDate>Mon, 30 Nov 2020 15:48:24 -0800</pubDate>
-      
-      <guid>https://anihilis.ddns.me/personal_logs/day_19/</guid>
-      <description>OpenBSD still eludes me, and i have no idea what to do about it. It&amp;rsquo;s no longer installed on my computer, as I suddenly had things I had to do that work time-sensitive. I want to reinstall it, and I refuse to dual boot anything ever.
-The lack of virtualization is also quite odd, and I don&amp;rsquo;t know how I&amp;rsquo;m going to get past that, cause god-damn is that a sexy OS or what (like, I would love to use it for my server-side work too)?</description>
     </item>
     
   </channel>
