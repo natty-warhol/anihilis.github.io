@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 22 Mar 2021 11:41:57 -0700</lastBuildDate><atom:link href="https://anihilis.ddns.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Mar 2021 22:24:10 -0700</lastBuildDate><atom:link href="https://anihilis.ddns.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_27</title>
+      <link>https://anihilis.ddns.me/personal_logs/day_27/</link>
+      <pubDate>Wed, 24 Mar 2021 22:24:10 -0700</pubDate>
+      
+      <guid>https://anihilis.ddns.me/personal_logs/day_27/</guid>
+      <description>Depression is Real. And so are all the other things people can have. People really have a hard time seeing outside of themselves, I find. I feel like this is a fatal flaw in our character. I mean, we are the smartest people on earth, and the ones that have caused growth and progress in society are those that have taken the time to see others and learn how they think.</description>
+    </item>
+    
     <item>
       <title>Day_26</title>
       <link>https://anihilis.ddns.me/personal_logs/day_26/</link>
@@ -94,15 +103,6 @@ As a kid however, I didn&amp;rsquo;t see all that, I saw a man who was short in 
       
       <guid>https://anihilis.ddns.me/recipes/</guid>
       <description>Table of Contents:   ⚬ Drinks  Ginger Beer Super Morning Tea Ginger Detox Pumpkin Milk  ⚬ Main Dishes  Mac &amp;lsquo;n Cheese Vegan Chili Roasted Potato Cups w/ Guacamole Cheesy Meatball Bake  ⚬ Sides  Savory Rice  ⚬ Scratch // Basics  Flour Tortillas Easy Pancake Recipe Chia Seed Pudding  ⚬ Desserts  Pumpkin Pie Zucchini Brownies Cookies Peanut Butter Cookies Lefse Vegan Peanut Butter Ice Cream   Drinks Ginger Beer Ingredients  Water Brown Sugar White Sugar Fresh Ginger, Peeled and Minced Kosher Salt Lemon Juice Active Dry Yeast  Directions In a large saucepan combine 1qt water, ½ cup white and brown sugar (each), with a pinch of salt.</description>
-    </item>
-    
-    <item>
-      <title>Plex Server Update</title>
-      <link>https://anihilis.ddns.me/posts/2020/12/plex-server-update/</link>
-      <pubDate>Thu, 03 Dec 2020 07:04:45 -0800</pubDate>
-      
-      <guid>https://anihilis.ddns.me/posts/2020/12/plex-server-update/</guid>
-      <description>Plex Server Updated [Stable Edition] In my Many Journeys I find myself hopelessly trying to find the cleanest most efficient way to get the things I want done, done. I have hopes to maybe make another one of these soon, instead using FreeBSD as hopefully a final home for all my server needs, but until I become comfortable with that world, I&amp;rsquo;m going to focus on using Linux in the most organized way possible.</description>
     </item>
     
   </channel>

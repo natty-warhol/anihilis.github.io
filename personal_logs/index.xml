@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 22 Mar 2021 11:41:57 -0700</lastBuildDate><atom:link href="https://anihilis.ddns.me/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Mar 2021 22:24:10 -0700</lastBuildDate><atom:link href="https://anihilis.ddns.me/personal_logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day_27</title>
+      <link>https://anihilis.ddns.me/personal_logs/day_27/</link>
+      <pubDate>Wed, 24 Mar 2021 22:24:10 -0700</pubDate>
+      
+      <guid>https://anihilis.ddns.me/personal_logs/day_27/</guid>
+      <description>Depression is Real. And so are all the other things people can have. People really have a hard time seeing outside of themselves, I find. I feel like this is a fatal flaw in our character. I mean, we are the smartest people on earth, and the ones that have caused growth and progress in society are those that have taken the time to see others and learn how they think.</description>
+    </item>
+    
     <item>
       <title>Day_26</title>
       <link>https://anihilis.ddns.me/personal_logs/day_26/</link>
@@ -94,16 +103,6 @@ The lack of virtualization is also quite odd, and I don&amp;rsquo;t know how I&a
       
       <guid>https://anihilis.ddns.me/personal_logs/day_18/</guid>
       <description>I did it I installed OpenBSD onto my main computer, so far so good! The hardest part for me was setting up my touchpad (I like to turn it off and only use the trackpoint). I&amp;rsquo;ve still got a lot to do before I can call it production ready, but I&amp;rsquo;m really loving it! I don&amp;rsquo;t know why I got cold feet about it, this is the most fun I&amp;rsquo;ve had in a while!</description>
-    </item>
-    
-    <item>
-      <title>Day_17</title>
-      <link>https://anihilis.ddns.me/personal_logs/day_17/</link>
-      <pubDate>Mon, 28 Sep 2020 15:34:27 -0700</pubDate>
-      
-      <guid>https://anihilis.ddns.me/personal_logs/day_17/</guid>
-      <description>Colour Scheming is a Strange Beast I love pretty colours, but I hate having to set up my system with whole new colour scheming.
-I&amp;rsquo;m working on swtiching from the Dracula theme to the Nord theme (I hate saturated work stations&amp;hellip; too busy for long term work). GODDAMN I just wish there was a way to set up all the different config files to respond to the Xresources&amp;hellip;.. hmm&amp;hellip; Maybe I could figure something out&amp;hellip;.</description>
     </item>
     
   </channel>
