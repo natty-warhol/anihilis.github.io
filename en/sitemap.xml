@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://anihilis.ddns.me/films/03.25.21_zacksnydersjusticeleague/</loc>
+    <lastmod>2021-03-25T07:17:28-07:00</lastmod>
+  </url><url>
     <loc>https://anihilis.ddns.me/</loc>
-    <lastmod>2021-03-24T22:24:10-07:00</lastmod>
+    <lastmod>2021-03-25T07:17:28-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -14,6 +17,9 @@
                 hreflang="en"
                 href="https://anihilis.ddns.me/"
                 />
+  </url><url>
+    <loc>https://anihilis.ddns.me/films/</loc>
+    <lastmod>2021-03-25T07:17:28-07:00</lastmod>
   </url><url>
     <loc>https://anihilis.ddns.me/personal_logs/day_27/</loc>
     <lastmod>2021-03-24T22:24:10-07:00</lastmod>
@@ -74,9 +80,6 @@
     <lastmod>2020-11-30T15:48:24-08:00</lastmod>
   </url><url>
     <loc>https://anihilis.ddns.me/films/10.12.20_thevoid/</loc>
-    <lastmod>2020-10-19T17:06:25-07:00</lastmod>
-  </url><url>
-    <loc>https://anihilis.ddns.me/films/</loc>
     <lastmod>2020-10-19T17:06:25-07:00</lastmod>
   </url><url>
     <loc>https://anihilis.ddns.me/films/10.11.20_possum/</loc>
