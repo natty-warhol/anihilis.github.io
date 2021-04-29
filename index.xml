@@ -18,6 +18,17 @@
     </item>
     
     <item>
+      <title>Day_28</title>
+      <link>https://anihilis.ddns.me/personal_logs/day_28/</link>
+      <pubDate>Tue, 13 Apr 2021 19:24:19 -0700</pubDate>
+      
+      <guid>https://anihilis.ddns.me/personal_logs/day_28/</guid>
+      <description>Photos!! Ooh! I did a thing!
+I&amp;rsquo;ve been on a website making kick lately, I don&amp;rsquo;t know what&amp;rsquo;s gotten into me&amp;hellip; Probably cause I have no other real outlet at this point in my life lol.
+Anyways, if there&amp;rsquo;s any interest, the link the this slowly churning project can be found, right here</description>
+    </item>
+    
+    <item>
       <title>03.25 - Zack Snyder&#39;s Justice League</title>
       <link>https://anihilis.ddns.me/films/03.25.21_zacksnydersjusticeleague/</link>
       <pubDate>Thu, 25 Mar 2021 07:17:28 -0700</pubDate>
@@ -92,16 +103,6 @@ HOLY SHIT I WISH I HAD A DEDICATED GPU. I am super excited about finally being a
       <guid>https://anihilis.ddns.me/personal_logs/day_22/</guid>
       <description>The Constant Need for Improvement It kills me. I have a dog-damned problem with organization. It&amp;rsquo;s like it&amp;rsquo;s the only thing that will get me off anymore is a well arranged stack of books, or a meticulousely organized filesystem to take it the nerdy way.
 I almost find it infuriating at times however, how I am constantly changing what my systems are for and what they need to be able to do.</description>
-    </item>
-    
-    <item>
-      <title>Day_21</title>
-      <link>https://anihilis.ddns.me/personal_logs/day_21/</link>
-      <pubDate>Mon, 11 Jan 2021 15:47:05 -0800</pubDate>
-      
-      <guid>https://anihilis.ddns.me/personal_logs/day_21/</guid>
-      <description>Okay, so I finally install OpenBSD and goddamn, I miss it. Of course I got rid of it after a week and installed Arch Linux with herbstluftwm (my default setup for the past 10 years, despite trying to break it).
-I really love OpenBSD, holy shit, it&amp;rsquo;s amazing, well put together, well secured, and has really good hardware support (for Lenovo at least), but has terrible software support. I figure it&amp;rsquo;s because of the security settings, but I can&amp;rsquo;t stand not being able to read out my battery status in live-time, as well as missed the ability to easily handle other filesystems and devices.</description>
     </item>
     
   </channel>
